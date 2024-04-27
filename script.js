@@ -8,19 +8,19 @@ function openPopup(element) {
     popup.classList.remove("popup-hidden");
 }
 
-function hoverCategory(cat_ids) {
-    cat_ids.forEach(id => {
-        const cat_key = document.getElementById("cat-" + id);
-        cat_key.classList.add("cat-highlight-single");
-    });
-}
+// function hoverCategory(cat_ids) {
+//     cat_ids.forEach(id => {
+//         const cat_key = document.getElementById("cat-" + id);
+//         cat_key.classList.add("cat-highlight-single");
+//     });
+// }
 
-function unhoverCategory(cat_ids) {
-    cat_ids.forEach(id => {
-        const cat_key = document.getElementById("cat-" + id);
-        cat_key.classList.remove("cat-highlight-single");
-    });
-}
+// function unhoverCategory(cat_ids) {
+//     cat_ids.forEach(id => {
+//         const cat_key = document.getElementById("cat-" + id);
+//         cat_key.classList.remove("cat-highlight-single");
+//     });
+// }
 
 function hoverCategories(cat_ids) {
     cat_ids.forEach(id => {
@@ -45,6 +45,9 @@ function determinePosition() {
     for (let i = 1; i <= 38; i++) {
         const num_str = i.toString().padStart(2, "0");
         const event_elem = document.getElementById("event-" + num_str);
+        if (event_elem == null) {
+            continue;
+        }
         const rect = event_elem.getBoundingClientRect();
         const rel_top = rect["top"] - top_pos;
         const rel_bottom = rect["bottom"] - top_pos;
@@ -68,6 +71,9 @@ function determinePosition() {
     for (let i = 1; i <= 38; i++) {
         const num_str = i.toString().padStart(2, "0");
         const curr_event = document.getElementById("event-button-" + num_str);
+        if (curr_event == null) {
+            continue;
+        }
         if (i == max_id) {
             curr_event.classList.add("current-event-button");
         } else {
@@ -76,4 +82,5 @@ function determinePosition() {
     }
 }
 
+window.addEventListener("load", determinePosition);
 window.addEventListener("scroll", determinePosition);

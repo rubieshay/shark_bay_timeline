@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/ahg0fly.css">
     <script src="script.js"></script>
-    <link rel="icon" href="graphics/logo-color.svg">
+    <link rel="icon" href="graphics/logo_color.svg">
 </head>
 <body>
     <header>
         <section id="title-bar">
-            <h1>The Ecological History of Shark Bay</h1>
+            <h1><a href="#">The Ecological History of Shark Bay</a></h1>
             <button onclick="openPopup()">
-                <img src="graphics/logo-light.svg" alt="logo">
+                <img src="graphics/logo_light.svg" alt="logo">
                 <span>Land Acknowledgement</span>
             </button>
         </section>
@@ -22,35 +22,51 @@
             <h2>Event Categories</h2>
             <ul id="key-cats">
                 <li id="cat-1">
-                    <img class="category-icon key-cat" src="graphics/timeline_category_icons-1.svg" alt="Geological formations and changes icon">
-                    <span>Geological Formations and Changes</span>
+                    <a href="subpages/geological.html">
+                        <img class="category-icon key-cat" src="graphics/timeline_category_icons-1.svg" alt="Geological formations and changes icon">
+                    </a>
+                    <span>Geological Formations & Changes</span>
                 </li>
                 <li id="cat-2">
-                    <img class="category-icon key-cat" src="graphics/timeline_category_icons-2.svg" alt="Aboriginal activity icon">
+                    <a href="subpages/aboriginal.html">
+                        <img class="category-icon key-cat" src="graphics/timeline_category_icons-2.svg" alt="Aboriginal activity icon">
+                    </a>
                     <span>Aboriginal Activity</span>
                 </li>
                 <li id="cat-3">
-                    <img class="category-icon key-cat" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
+                    <a href="subpages/european.html">
+                        <img class="category-icon key-cat" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
+                    </a>
                     <span>European Settler Activity</span>
                 </li>
                 <li id="cat-4">
-                    <img class="category-icon key-cat" src="graphics/timeline_category_icons-4.svg" alt="Land purchases and classifications icon">
+                    <a href="subpages/land.html">
+                        <img class="category-icon key-cat" src="graphics/timeline_category_icons-4.svg" alt="Land purchases and classifications icon">
+                    </a>
                     <span>Land Purchases & Classifications</span>
                 </li>
                 <li id="cat-5">
-                    <img class="category-icon key-cat" src="graphics/timeline_category_icons-5.svg" alt="Invasive populations and species icon">
+                    <a href="subpages/invasive.html">
+                        <img class="category-icon key-cat" src="graphics/timeline_category_icons-5.svg" alt="Invasive populations and species icon">
+                    </a>
                     <span>Invasive Populations & Species</span>
                 </li>
                 <li id="cat-6">
-                    <img class="category-icon key-cat" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
+                    <a href="subpages/reintroduced.html">
+                        <img class="category-icon key-cat" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
+                    </a>
                     <span>Reintroduction of Species</span>
                 </li>
                 <li id="cat-7">
-                    <img class="category-icon key-cat" src="graphics/timeline_category_icons-7.svg" alt="Project Eden icon">
+                    <a href="subpages/project_eden.html">
+                        <img class="category-icon key-cat" src="graphics/timeline_category_icons-7.svg" alt="Project Eden icon">
+                    </a>
                     <span>Project Eden</span>
                 </li>
                 <li id="cat-8">
-                    <img class="category-icon key-cat" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
+                    <a href="subpages/return_to_1616.html">
+                        <img class="category-icon key-cat" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
+                    </a>
                     <span>Return to 1616 Project</span>
                 </li>
             </ul>
@@ -329,7 +345,9 @@
             <div class="event" onmouseover="hoverCategories([1])" onmouseout="unhoverCategories([1])">
                 <h3 class="year-long">3B YEARS AGO</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([1])" onmouseout="unhoverCategory([1])" src="graphics/timeline_category_icons-1.svg" alt="Geological formations and changes icon">
+                    <a href="subpages/geological.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([1])" onmouseout="unhoverCategory([1])" src="graphics/timeline_category_icons-1.svg" alt="Geological formations and changes icon">
+                    </a>
                 </div>
                 <hr>
                 <p>Microbial mats and stromatolites began to form in the extreme heat and water salinity as bacteria clumped together and calcified.</p>
@@ -350,7 +368,9 @@
             <div class="event" onmouseover="hoverCategories([1])" onmouseout="unhoverCategories([1])">
                 <h3 class="year-long">2B YEARS AGO</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([1])" onmouseout="unhoverCategory([1])" src="graphics/timeline_category_icons-1.svg" alt="Geological formations and changes icon">
+                    <a href="subpages/geological.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([1])" onmouseout="unhoverCategory([1])" src="graphics/timeline_category_icons-1.svg" alt="Geological formations and changes icon">
+                    </a>
                 </div>
                 <hr>
                 <p>Cyanobacteria in microbial mats breathed oxygen into the atmosphere, influencing the evolution of complex life forms.</p>
@@ -371,7 +391,9 @@
             <div class="event" onmouseover="hoverCategories([1])" onmouseout="unhoverCategories([1])">
                 <h3 class="year-long">2M - 10K YEARS AGO</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([1])" onmouseout="unhoverCategory([1])" src="graphics/timeline_category_icons-1.svg" alt="Geological formations and changes icon">
+                    <a href="subpages/geological.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([1])" onmouseout="unhoverCategory([1])" src="graphics/timeline_category_icons-1.svg" alt="Geological formations and changes icon">
+                    </a>
                 </div>
                 <hr>
                 <p>Red sand (tinted by a coating of iron oxide) collected over the land, and was shaped into dunes by the wind and river. It cemented into Peron sandstone.</p>
@@ -392,7 +414,9 @@
             <div class="event" onmouseover="hoverCategories([1])" onmouseout="unhoverCategories([1])">
                 <h3 class="year-long">1M - 10K YEARS AGO</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([1])" onmouseout="unhoverCategory([1])" src="graphics/timeline_category_icons-1.svg" alt="Geological formations and changes icon">
+                    <a href="subpages/geological.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([1])" onmouseout="unhoverCategory([1])" src="graphics/timeline_category_icons-1.svg" alt="Geological formations and changes icon">
+                    </a>
                 </div>
                 <hr>
                 <p>White sand made up of broken shells, corals, and skeletons was deposited on top of the Peron sandstone in many areas, creating Tamala limestone.</p>
@@ -413,7 +437,9 @@
             <div class="event" onmouseover="hoverCategories([2])" onmouseout="unhoverCategories([2])">
                 <h3 class="year-long">30K YEARS AGO</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([2])" onmouseout="unhoverCategory([2])" src="graphics/timeline_category_icons-2.svg" alt="Aboriginal activity icon">
+                    <a href="subpages/aboriginal.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([2])" onmouseout="unhoverCategory([2])" src="graphics/timeline_category_icons-2.svg" alt="Aboriginal activity icon">
+                    </a>
                 </div>
                 <hr>
                 <p>The land was first occupied by the aboriginal people.</p>
@@ -434,7 +460,9 @@
             <div class="event" onmouseover="hoverCategories([1])" onmouseout="unhoverCategories([1])">
                 <h3 class="year-long">10K - 8K YEARS AGO</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([1])" onmouseout="unhoverCategory([1])" src="graphics/timeline_category_icons-1.svg" alt="Geological formations and changes icon">
+                    <a href="subpages/geological.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([1])" onmouseout="unhoverCategory([1])" src="graphics/timeline_category_icons-1.svg" alt="Geological formations and changes icon">
+                    </a>
                 </div>
                 <hr>
                 <p>Land access to Dirk Hartog, Dorre, and Benier Islands were cut off due to rising sea levels. Birridas were also filled with saline waters, creating lakes which would later dry out leaving powdery gypsum.</p>
@@ -455,7 +483,9 @@
             <div class="event" onmouseover="hoverCategories([1])" onmouseout="unhoverCategories([1])">
                 <h3 class="year-long">10K - 5K YEARS AGO</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([1])" onmouseout="unhoverCategory([1])" src="graphics/timeline_category_icons-1.svg" alt="Geological formations and changes icon">
+                    <a href="subpages/geological.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([1])" onmouseout="unhoverCategory([1])" src="graphics/timeline_category_icons-1.svg" alt="Geological formations and changes icon">
+                    </a>
                 </div>
                 <hr>
                 <p>Earthquakes caused the formation of the Zuytdorp cliffs due to the land shifting on a fault line.</p>
@@ -476,7 +506,9 @@
             <div class="event" onmouseover="hoverCategories([1])" onmouseout="unhoverCategories([1])">
                 <h3 class="year-long">6K - 3K YEARS AGO</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([1])" onmouseout="unhoverCategory([1])" src="graphics/timeline_category_icons-1.svg" alt="Geological formations and changes icon">
+                    <a href="subpages/geological.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([1])" onmouseout="unhoverCategory([1])" src="graphics/timeline_category_icons-1.svg" alt="Geological formations and changes icon">
+                    </a>
                 </div>
                 <hr>
                 <p>Dorre and Benier Islands were separated from each other due to rising sea levels.</p>
@@ -497,7 +529,9 @@
             <div class="event" onmouseover="hoverCategories([3])" onmouseout="unhoverCategories([3])">
                 <h3>1616</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([3])" onmouseout="unhoverCategory([3])" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
+                    <a href="subpages/european.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([3])" onmouseout="unhoverCategory([3])" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
+                    </a>
                 </div>
                 <hr>
                 <p>Dirk Hartog was the first European to arrive in Shark Bay.</p>
@@ -518,8 +552,12 @@
             <div class="event" onmouseover="hoverCategories([2, 3])" onmouseout="unhoverCategories([2, 3])">
                 <h3>1772</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([2])" onmouseout="unhoverCategory([2])" src="graphics/timeline_category_icons-2.svg" alt="Aboriginal activity icon">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([3])" onmouseout="unhoverCategory([3])" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
+                    <a href="subpages/aboriginal.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([2])" onmouseout="unhoverCategory([2])" src="graphics/timeline_category_icons-2.svg" alt="Aboriginal activity icon">
+                    </a>
+                    <a href="subpages/european.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([3])" onmouseout="unhoverCategory([3])" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
+                    </a>
                 </div>
                 <hr>
                 <p>French explorers first interacted with the aboriginal people.</p>
@@ -540,7 +578,9 @@
             <div class="event" onmouseover="hoverCategories([3])" onmouseout="unhoverCategories([3])">
                 <h3>1801</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([3])" onmouseout="unhoverCategory([3])" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
+                    <a href="subpages/european.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([3])" onmouseout="unhoverCategory([3])" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
+                    </a>
                 </div>
                 <hr>
                 <p>When French explorers visited the area, 23 mammal species were recorded in the area, less than half of which remained when restoration efforts began.</p>
@@ -561,7 +601,9 @@
             <div class="event" onmouseover="hoverCategories([3])" onmouseout="unhoverCategories([3])">
                 <h3>1850</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([3])" onmouseout="unhoverCategory([3])" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
+                    <a href="subpages/european.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([3])" onmouseout="unhoverCategory([3])" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
+                    </a>
                 </div>
                 <hr>
                 <p>European settlement began in the area, and the land and its resources were taken advantage of including the first land-based industry of guano mining.</p>
@@ -582,7 +624,9 @@
             <div class="event" onmouseover="hoverCategories([3])" onmouseout="unhoverCategories([3])">
                 <h3>1850s</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([3])" onmouseout="unhoverCategory([3])" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
+                    <a href="subpages/european.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([3])" onmouseout="unhoverCategory([3])" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
+                    </a>
                 </div>
                 <hr>
                 <p>Starting in the 1850s and peaking in the 1870s, commercial pearling was a prominent industry, which severely limited the wild pearl oyster population.</p>
@@ -603,8 +647,12 @@
             <div class="event" onmouseover="hoverCategories([3, 5])" onmouseout="unhoverCategories([3, 5])">
                 <h3>1869</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([3])" onmouseout="unhoverCategory([3])" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([5])" onmouseout="unhoverCategory([5])" src="graphics/timeline_category_icons-5.svg" alt="Invasive populations and species icon">
+                    <a href="subpages/european.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([3])" onmouseout="unhoverCategory([3])" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
+                    </a>
+                    <a href="subpages/invasive.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([5])" onmouseout="unhoverCategory([5])" src="graphics/timeline_category_icons-5.svg" alt="Invasive populations and species icon">
+                    </a>
                 </div>
                 <hr>
                 <p>The first pastoral sheep station was built on Dirk Hartog Island.</p>
@@ -625,7 +673,9 @@
             <div class="event" onmouseover="hoverCategories([3])" onmouseout="unhoverCategories([3])">
                 <h3>1890s</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([3])" onmouseout="unhoverCategory([3])" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
+                    <a href="subpages/european.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([3])" onmouseout="unhoverCategory([3])" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
+                    </a>
                 </div>
                 <hr>
                 <p>Sandalwood was commercially harvested and shipped out of the island, and continued until 2000.</p>
@@ -646,7 +696,9 @@
             <div class="event" onmouseover="hoverCategories([3])" onmouseout="unhoverCategories([3])">
                 <h3>1930s</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([3])" onmouseout="unhoverCategory([3])" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
+                    <a href="subpages/european.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([3])" onmouseout="unhoverCategory([3])" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
+                    </a>
                 </div>
                 <hr>
                 <p>Fishing became a viable industry, and fishing licenses today can only be passed down through families in order to preserve the traditional fishing methods and fish stock.</p>
@@ -667,8 +719,12 @@
             <div class="event" onmouseover="hoverCategories([3, 5])" onmouseout="unhoverCategories([3, 5])">
                 <h3>1960s</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([3])" onmouseout="unhoverCategory([3])" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([5])" onmouseout="unhoverCategory([5])" src="graphics/timeline_category_icons-5.svg" alt="Invasive populations and species icon">
+                    <a href="subpages/european.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([3])" onmouseout="unhoverCategory([3])" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
+                    </a>
+                    <a href="subpages/invasive.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([5])" onmouseout="unhoverCategory([5])" src="graphics/timeline_category_icons-5.svg" alt="Invasive populations and species icon">
+                    </a>
                 </div>
                 <hr>
                 <p>Sheep populations reached about 142,000 in Shark Bay.</p>
@@ -689,7 +745,9 @@
             <div class="event" onmouseover="hoverCategories([4])" onmouseout="unhoverCategories([4])">
                 <h3>1990</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([4])" onmouseout="unhoverCategory([4])" src="graphics/timeline_category_icons-4.svg" alt="Land purchases and classifications icon">
+                    <a href="subpages/land.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([4])" onmouseout="unhoverCategory([4])" src="graphics/timeline_category_icons-4.svg" alt="Land purchases and classifications icon">
+                    </a>
                 </div>
                 <hr>
                 <p>A 40,000 hectare pastoral station in Peron was bought by the Western Australian Government for conservation efforts, later turned into the Francois Peron National Park.</p>
@@ -710,7 +768,9 @@
             <div class="event" onmouseover="hoverCategories([4])" onmouseout="unhoverCategories([4])">
                 <h3>1991</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([4])" onmouseout="unhoverCategory([4])" src="graphics/timeline_category_icons-4.svg" alt="Land purchases and classifications icon">
+                    <a href="subpages/land.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([4])" onmouseout="unhoverCategory([4])" src="graphics/timeline_category_icons-4.svg" alt="Land purchases and classifications icon">
+                    </a>
                 </div>
                 <hr>
                 <p>Shark Bay was declared a World Heritage Site, satisfying all four natural criteria.</p>
@@ -731,9 +791,15 @@
             <div class="event" onmouseover="hoverCategories([5, 6, 7])" onmouseout="unhoverCategories([5, 6, 7])">
                 <h3>1995</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([5])" onmouseout="unhoverCategory([5])" src="graphics/timeline_category_icons-5.svg" alt="Invasive populations and species icon">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([7])" onmouseout="unhoverCategory([7])" src="graphics/timeline_category_icons-7.svg" alt="Project Eden icon">
+                    <a href="subpages/invasive.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([5])" onmouseout="unhoverCategory([5])" src="graphics/timeline_category_icons-5.svg" alt="Invasive populations and species icon">
+                    </a>
+                    <a href="subpages/reintroduced.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
+                    </a>
+                    <a href="subpages/project_eden.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([7])" onmouseout="unhoverCategory([7])" src="graphics/timeline_category_icons-7.svg" alt="Project Eden icon">
+                    </a>
                 </div>
                 <hr>
                 <p>Project Eden was launched with the aim of removing pastoral and feral animals, and reintroducing native species.</p>
@@ -754,8 +820,12 @@
             <div class="event" onmouseover="hoverCategories([6, 7])" onmouseout="unhoverCategories([6, 7])">
                 <h3>1996</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([7])" onmouseout="unhoverCategory([7])" src="graphics/timeline_category_icons-7.svg" alt="Project Eden icon">
+                    <a href="subpages/reintroduced.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
+                    </a>
+                    <a href="subpages/project_eden.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([7])" onmouseout="unhoverCategory([7])" src="graphics/timeline_category_icons-7.svg" alt="Project Eden icon">
+                    </a>
                 </div>
                 <hr>
                 <p>As part of Project Eden, the Peron Captive Breeding Centre was established to understand more about animal behaviors and reintroduce species to the Peron Peninsula.</p>
@@ -776,8 +846,12 @@
             <div class="event" onmouseover="hoverCategories([6, 7])" onmouseout="unhoverCategories([6, 7])">
                 <h3>1997</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([7])" onmouseout="unhoverCategory([7])" src="graphics/timeline_category_icons-7.svg" alt="Project Eden icon">
+                    <a href="subpages/reintroduced.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
+                    </a>
+                    <a href="subpages/project_eden.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([7])" onmouseout="unhoverCategory([7])" src="graphics/timeline_category_icons-7.svg" alt="Project Eden icon">
+                    </a>
                 </div>
                 <hr>
                 <p>The Malleefowl was successfully reintroduced as part of Project Eden. At the same time, Woylies were reintroduced but the effort was unsuccessful.</p>
@@ -798,7 +872,9 @@
             <div class="event" onmouseover="hoverCategories([4])" onmouseout="unhoverCategories([4])">
                 <h3>1999</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([4])" onmouseout="unhoverCategory([4])" src="graphics/timeline_category_icons-4.svg" alt="Land purchases and classifications icon">
+                    <a href="subpages/land.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([4])" onmouseout="unhoverCategory([4])" src="graphics/timeline_category_icons-4.svg" alt="Land purchases and classifications icon">
+                    </a>
                 </div>
                 <hr>
                 <p>The Western Australian Government purchased Faure Island to continue conservation efforts.</p>
@@ -819,7 +895,9 @@
             <div class="event" onmouseover="hoverCategories([4])" onmouseout="unhoverCategories([4])">
                 <h3>2000</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([4])" onmouseout="unhoverCategory([4])" src="graphics/timeline_category_icons-4.svg" alt="Land purchases and classifications icon">
+                    <a href="subpages/land.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([4])" onmouseout="unhoverCategory([4])" src="graphics/timeline_category_icons-4.svg" alt="Land purchases and classifications icon">
+                    </a>
                 </div>
                 <hr>
                 <p>The Nanga pastoral land was purchased by the Commonwealth and Western Australian Government to protect and conserve the area, including the tree heath.</p>
@@ -840,8 +918,12 @@
             <div class="event" onmouseover="hoverCategories([6, 7])" onmouseout="unhoverCategories([6, 7])">
                 <h3>2001</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([7])" onmouseout="unhoverCategory([7])" src="graphics/timeline_category_icons-7.svg" alt="Project Eden icon">
+                    <a href="subpages/reintroduced.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
+                    </a>
+                    <a href="subpages/project_eden.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([7])" onmouseout="unhoverCategory([7])" src="graphics/timeline_category_icons-7.svg" alt="Project Eden icon">
+                    </a>
                 </div>
                 <hr>
                 <p>Both banded hare-wallabies and rufous hare-wallabies were unsuccessfully reintroduced on the Peron Peninsula as part of Project Eden due to remaining feral cat populations. </p>
@@ -862,8 +944,12 @@
             <div class="event" onmouseover="hoverCategories([6, 7])" onmouseout="unhoverCategories([6, 7])">
                 <h3>2004</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([7])" onmouseout="unhoverCategory([7])" src="graphics/timeline_category_icons-7.svg" alt="Project Eden icon">
+                    <a href="subpages/reintroduced.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
+                    </a>
+                    <a href="subpages/project_eden.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([7])" onmouseout="unhoverCategory([7])" src="graphics/timeline_category_icons-7.svg" alt="Project Eden icon">
+                    </a>
                 </div>
                 <hr>
                 <p>Banded hare-wallabies were released on Faure Island and were successfully reintroduced as part of Project Eden.</p>
@@ -884,8 +970,12 @@
             <div class="event" onmouseover="hoverCategories([6, 7])" onmouseout="unhoverCategories([6, 7])">
                 <h3>2006</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([7])" onmouseout="unhoverCategory([7])" src="graphics/timeline_category_icons-7.svg" alt="Project Eden icon">
+                    <a href="subpages/reintroduced.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
+                    </a>
+                    <a href="subpages/project_eden.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([7])" onmouseout="unhoverCategory([7])" src="graphics/timeline_category_icons-7.svg" alt="Project Eden icon">
+                    </a>
                 </div>
                 <hr>
                 <p>Quendas (or southern brown bandicoots) were unsuccessfully reintroduced on the Peron Peninsula as part of Project Eden.</p>
@@ -906,7 +996,9 @@
             <div class="event" onmouseover="hoverCategories([4])" onmouseout="unhoverCategories([4])">
                 <h3>2009</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([4])" onmouseout="unhoverCategory([4])" src="graphics/timeline_category_icons-4.svg" alt="Land purchases and classifications icon">
+                    <a href="subpages/land.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([4])" onmouseout="unhoverCategory([4])" src="graphics/timeline_category_icons-4.svg" alt="Land purchases and classifications icon">
+                    </a>
                 </div>
                 <hr>
                 <p>Dirk Hartog Island was declared a National Park.</p>
@@ -927,9 +1019,15 @@
             <div class="event" onmouseover="hoverCategories([5, 6, 8])" onmouseout="unhoverCategories([5, 6, 8])">
                 <h3>2012</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([5])" onmouseout="unhoverCategory([5])" src="graphics/timeline_category_icons-5.svg" alt="Invasive populations and species icon">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([8])" onmouseout="unhoverCategory([8])" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
+                    <a href="subpages/invasive.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([5])" onmouseout="unhoverCategory([5])" src="graphics/timeline_category_icons-5.svg" alt="Invasive populations and species icon">
+                    </a>
+                    <a href="subpages/reintroduced.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
+                    </a>
+                    <a href="subpages/return_to_1616.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([8])" onmouseout="unhoverCategory([8])" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
+                    </a>
                 </div>
                 <hr>
                 <p>The Dirk Hartog Island National Park: Return to 1616 project was started with the goal of returning the island to its state before the first Europeans arrived in Shark Bay by removing invasive species and reintroducing native ones.</p>
@@ -950,8 +1048,12 @@
             <div class="event" onmouseover="hoverCategories([6, 7])" onmouseout="unhoverCategories([6, 7])">
                 <h3>2013</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([7])" onmouseout="unhoverCategory([7])" src="graphics/timeline_category_icons-7.svg" alt="Project Eden icon">
+                    <a href="subpages/reintroduced.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
+                    </a>
+                    <a href="subpages/project_eden.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([7])" onmouseout="unhoverCategory([7])" src="graphics/timeline_category_icons-7.svg" alt="Project Eden icon">
+                    </a>
                 </div>
                 <hr>
                 <p>Bilbies were successfully reintroduced to the Peron Peninsula as part of Project Eden.</p>
@@ -972,7 +1074,9 @@
             <div class="event" onmouseover="hoverCategories([4])" onmouseout="unhoverCategories([4])">
                 <h3>2015</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([4])" onmouseout="unhoverCategory([4])" src="graphics/timeline_category_icons-4.svg" alt="Land purchases and classifications icon">
+                    <a href="subpages/land.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([4])" onmouseout="unhoverCategory([4])" src="graphics/timeline_category_icons-4.svg" alt="Land purchases and classifications icon">
+                    </a>
                 </div>
                 <hr>
                 <p>Bush Heritage (a nonprofit conservation organization) bought the Hamelin station.</p>
@@ -993,8 +1097,12 @@
             <div class="event" onmouseover="hoverCategories([5, 8])" onmouseout="unhoverCategories([5, 8])">
                 <h3>2016</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([5])" onmouseout="unhoverCategory([5])" src="graphics/timeline_category_icons-5.svg" alt="Invasive populations and species icon">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([8])" onmouseout="unhoverCategory([8])" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
+                    <a href="subpages/invasive.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([5])" onmouseout="unhoverCategory([5])" src="graphics/timeline_category_icons-5.svg" alt="Invasive populations and species icon">
+                    </a>
+                    <a href="subpages/return_to_1616.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([8])" onmouseout="unhoverCategory([8])" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
+                    </a>
                 </div>
                 <hr>
                 <p>As part of the Return to 1616 project, all sheep were removed from Dirk Hartog Island.</p>
@@ -1015,8 +1123,12 @@
             <div class="event" onmouseover="hoverCategories([5, 8])" onmouseout="unhoverCategories([5, 8])" >
                 <h3>2017</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([5])" onmouseout="unhoverCategory([5])" src="graphics/timeline_category_icons-5.svg" alt="Invasive populations and species icon">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([8])" onmouseout="unhoverCategory([8])" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
+                    <a href="subpages/invasive.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([5])" onmouseout="unhoverCategory([5])" src="graphics/timeline_category_icons-5.svg" alt="Invasive populations and species icon">
+                    </a>
+                    <a href="subpages/return_to_1616.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([8])" onmouseout="unhoverCategory([8])" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
+                    </a>
                 </div>
                 <hr>
                 <p>All goats were removed from Dirk Hartog Island as part of the Return to 1616 project.</p>
@@ -1037,9 +1149,15 @@
             <div class="event" onmouseover="hoverCategories([5, 6, 8])" onmouseout="unhoverCategories([5, 6, 8])" >
                 <h3>2018</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([5])" onmouseout="unhoverCategory([5])" src="graphics/timeline_category_icons-5.svg" alt="Invasive populations and species icon">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([8])" onmouseout="unhoverCategory([8])" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
+                    <a href="subpages/invasive.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([5])" onmouseout="unhoverCategory([5])" src="graphics/timeline_category_icons-5.svg" alt="Invasive populations and species icon">
+                    </a>
+                    <a href="subpages/reintroduced.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
+                    </a>
+                    <a href="subpages/return_to_1616.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([8])" onmouseout="unhoverCategory([8])" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
+                    </a>
                 </div>
                 <hr>
                 <p>As part of the Return to 1616 project, feral cats were eradicated from Dirk Hartog Island. In the same year, banded hare-wallabies and rufous hare-wallabies were reintroduced to the island.</p>
@@ -1060,8 +1178,12 @@
             <div class="event" onmouseover="hoverCategories([6, 8])" onmouseout="unhoverCategories([6, 8])">
                 <h3>2019</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([8])" onmouseout="unhoverCategory([8])" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
+                    <a href="subpages/reintroduced.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
+                    </a>
+                    <a href="subpages/return_to_1616.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([8])" onmouseout="unhoverCategory([8])" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
+                    </a>
                 </div>
                 <hr>
                 <p>Shark Bay bandicoots and dibblers were reintroduced to Dirk Hartog island as part of the Return to 1616 project.</p>
@@ -1082,8 +1204,12 @@
             <div class="event" onmouseover="hoverCategories([6, 8])" onmouseout="unhoverCategories([6, 8])">
                 <h3>2021</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([8])" onmouseout="unhoverCategory([8])" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
+                    <a href="subpages/reintroduced.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
+                    </a>
+                    <a href="subpages/return_to_1616.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([8])" onmouseout="unhoverCategory([8])" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
+                    </a>
                 </div>
                 <hr>
                 <p>As part of the Return to 1616 project, the Shark Bay mouse and greater stick-nest rat were reintroduced to Dirk Hartog Island.</p>
@@ -1104,8 +1230,12 @@
             <div class="event" onmouseover="hoverCategories([6, 8])" onmouseout="unhoverCategories([6, 8])">
                 <h3>2022</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([8])" onmouseout="unhoverCategory([8])" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
+                    <a href="subpages/reintroduced.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
+                    </a>
+                    <a href="subpages/return_to_1616.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([8])" onmouseout="unhoverCategory([8])" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
+                    </a>
                 </div>
                 <hr>
                 <p>The western grasswren was reintroduced to Dirk Hartog Island as part of the Return to 1616 project.</p>
@@ -1126,8 +1256,12 @@
             <div class="event" onmouseover="hoverCategories([6, 8])" onmouseout="unhoverCategories([6, 8])">
                 <h3>2023</h3>
                 <div class="cats">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
-                    <img class="category-icon event-cat" onmouseover="hoverCategory([8])" onmouseout="unhoverCategory([8])" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
+                    <a href="subpages/reintroduced.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
+                    </a>
+                    <a href="subpages/return_to_1616.html">
+                        <img class="category-icon event-cat" onmouseover="hoverCategory([8])" onmouseout="unhoverCategory([8])" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
+                    </a>
                 </div>
                 <hr>
                 <p>As part of the Return to 1616 project, the brush-tailed mulgara was reintroduced to Dirk Hartog Island.</p>

@@ -49,7 +49,7 @@ header {
     z-index: 20;
     top: 0;
 }
-header section#title-bar {
+header #title-bar {
     background: var(--dark-orange);
     min-height: 4rem;
     display: flex;
@@ -57,7 +57,7 @@ header section#title-bar {
     align-items: center;
     justify-content: center;
 }
-h1 {
+h1 a {
     font-family: "Urbana", sans-serif;
     font-size: 2rem;
     text-align: center;
@@ -115,6 +115,11 @@ img.category-icon {
     width: clamp(1.25rem, 2.5vw, 1.5rem);
     height: clamp(1.25rem, 2.5vw, 1.5rem);
     display: block;
+    transition: outline 300ms;
+    outline: 3px solid transparent;
+}
+img.category-icon:hover {
+    outline: 3px solid var(--bright-orange);
 }
 #key-cats li {
     display: flex;
@@ -123,7 +128,7 @@ img.category-icon {
     transform-origin: min(0.75rem, 1.25vw);
     transition: transform 300ms;
 }
-#key-cats li.cat-highlight-single {
+#key-cats li.cat-highlight {
     transform: scale(1.05);
 }
 #key-cats li img {
@@ -134,7 +139,7 @@ img.category-icon {
     outline: 3px solid var(--bright-orange);
 }
 #key-cats span {
-    color: white;
+    color: var(--white);
     font-size: 0.875rem;
     line-height: 1.5;
     text-decoration-color: transparent;
@@ -153,7 +158,7 @@ img.category-icon {
     }
 }
 @media (width < 975px) {
-    h1 {
+    h1 a{
         font-size: clamp(1rem, 4vw, 2rem);
     }
     header button span {
@@ -404,7 +409,7 @@ main {
     grid-area: line;
     background: var(--bright-orange);
     width: 2rem;
-    height: 100%;
+    min-height: inherit;
 }
 @media (width < 1250px) {
     .timeline-entry {
@@ -473,13 +478,6 @@ main {
     gap: 0.5rem;
     grid-area: cats;
     justify-content: end;
-}
-img.category-icon.event-cat {
-    transition: outline 300ms;
-    outline: 3px solid transparent;
-}
-img.category-icon.event-cat:hover {
-    outline: 3px solid var(--bright-orange);
 }
 .event hr {
     grid-area: rule;
@@ -597,6 +595,9 @@ img.category-icon.event-cat:hover {
 /* STARTING/ENDING EVENT */
 
 #top-line {
+    min-height: 10vh;
+}
+#end-line {
     min-height: 10vh;
 }
 #entry-end {
