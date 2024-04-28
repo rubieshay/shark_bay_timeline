@@ -8,6 +8,11 @@ function openPopup(element) {
     popup.classList.remove("popup-hidden");
 }
 
+function expandMenu(element) {
+    const menu = document.getElementById("key");
+    menu.classList.toggle("menu-hidden");
+}
+
 // function hoverCategory(cat_ids) {
 //     cat_ids.forEach(id => {
 //         const cat_key = document.getElementById("cat-" + id);

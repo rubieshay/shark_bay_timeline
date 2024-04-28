@@ -2,8 +2,12 @@ img.key-cat:hover {
     outline: 3px solid transparent;
 }
 aside {
-    height: calc(100vh - 6rem - clamp(1.25rem, 2.5vw, 1.5rem));
-    top: calc(6rem + clamp(1.25rem, 2.5vw, 1.5rem));
+    height: calc(100dvh - 7.5rem);
+    top: 7.5rem;
+}
+aside::after {
+    height: calc(100dvh - 7.5rem);
+    top: 7.5rem;
 }
 #category-header {
     background: var(--deep-orange);
@@ -31,4 +35,15 @@ aside {
 #category-header a img {
     display: block;
     height: clamp(1.25rem, 2.5vw, 1.5rem);
+}
+
+@media (max-width: 975px) {
+    body:not(:has(#key.menu-hidden)) aside {
+        height: calc(100dvh - 6.25rem);
+        top: 6.25rem;
+    }
+    aside::after {
+        height: calc(100dvh - 6.25rem);
+        top: 6.25rem;
+    }
 }

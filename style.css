@@ -49,9 +49,10 @@ header {
     z-index: 20;
     top: 0;
 }
-header #title-bar {
+#title-bar {
     background: var(--dark-orange);
-    min-height: 4rem;
+    width: 100%;
+    height: 4rem;
     display: flex;
     padding: 1rem;
     align-items: center;
@@ -63,7 +64,7 @@ h1 a {
     text-align: center;
     color: var(--white);
 }
-header button {
+#title-bar button {
     font-family: "Elizeth", sans-serif;
     font-weight: 400;
     font-size: 0.875rem;
@@ -75,34 +76,56 @@ header button {
     transition: color 500ms;
     transition: transform 500ms;
 }
-header button span {
+#title-bar button span {
     color: var(--white);
     text-decoration: underline;
+    font-size: 1em;
 }
-header button img {
+#title-bar button img {
+    font-size: 1em;
     display: block;
-    height: 1rem;
-    margin-right: 0.25rem;
+    height: 1.125em;
+    width: 1.125em;
+    margin-right: 0.375em;
 }
-header button:hover {
+#title-bar button:hover {
     transform: scale(1.05);
 }
-header section#key {
+#title-bar button:focus-visible, h1 a:focus-visible {
+    outline: 3px solid var(--white);
+    outline-offset: 5px;
+}
+#key {
     background: var(--deep-orange);
-    min-height: 4rem;
     padding: 1rem 2rem;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#key div {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 #key h2 {
     font-family: "Urbana", sans-serif;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
     color: var(--white);
     text-align: center;
     margin-right: 2rem;
     width: 7rem;
+}
+#key button {
+    cursor: pointer;
+}
+#key button img {
+    display: block;
+    height: clamp(1rem, 2vw, 1.2rem);
+    aspect-ratio: 4 / 3;
 }
 #key-cats {
     display: grid;
@@ -121,65 +144,129 @@ img.category-icon {
 img.category-icon:hover {
     outline: 3px solid var(--bright-orange);
 }
+.cats a:focus-visible, #key-cats li a:focus-visible {
+    outline: 5px solid var(--bright-orange);
+    outline-offset: 0px;
+}
 #key-cats li {
+    transform-origin: min(0.75rem, 1.25vw);
+    transition: transform 300ms;
+    cursor: pointer;
+}
+#key-cats li a {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    transform-origin: min(0.75rem, 1.25vw);
-    transition: transform 300ms;
 }
-#key-cats li.cat-highlight {
+#key-cats li.cat-highlight, #key-cats li:hover {
     transform: scale(1.05);
 }
 #key-cats li img {
+    width: 1.5rem;
+    height: 1.5rem;
     transition: outline 300ms;
     outline: 3px solid transparent;
 }
-#key-cats li.cat-highlight img {
+#key-cats li.cat-highlight img, #key-cats li:hover img {
     outline: 3px solid var(--bright-orange);
 }
 #key-cats span {
     color: var(--white);
     font-size: 0.875rem;
-    line-height: 1.5;
     text-decoration-color: transparent;
     text-decoration-line: underline;
     text-decoration-thickness: 3px;
     text-decoration-skip-ink: none;
     transition: text-decoration 300ms;
 }
-#key-cats li.cat-highlight span {
+#key-cats li.cat-highlight span, #key-cats li:hover span {
     text-decoration-color: var(--bright-orange);
 }
 @media (max-width: 1250px) {
+    #title-bar button {
+        font-size: 0.75rem;
+    }
     #key-cats {
         grid-template-columns: repeat(3, max-content);
         grid-template-rows: repeat(3, 1fr);
+        gap: 0.75rem 1.75rem;
+    }
+    #key h2 {
+        font-size: 1.375rem;
+    }
+    #key-cats span {
+        font-size: calc(0.875rem*11/12);
+    }
+    #key-cats li img {
+        height: 1.375rem;
+        width: 1.375rem;
+    }
+}
+@media (min-width: 976px) {
+    #key button {
+        display: none;
+        visibility: hidden;
     }
 }
 @media (max-width: 975px) {
-    h1 a{
-        font-size: clamp(1rem, 4vw, 2rem);
+    #title-bar {
+        height: 3.5rem;
     }
-    header button span {
-        font-size: clamp(0.4375rem, 1.75vw, 0.875rem);
+    h1 a {
+        font-size: 1.5rem;
     }
-    header button img {
-        height: clamp(0.5rem, 2vw, 1rem);
-        margin-right: clamp(0.125rem, 0.5vw, 0.25rem);
-    }
-    header button {
+    #title-bar button {
         position: relative;
         right: 0;
         margin-left: auto;
     }
+    #key {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #key div {
+        margin-bottom: 0.75rem;
+        width: 100%;
+    }
+    #key button {
+        transition: rotate 400ms;
+    }
+    #key h2 {
+        margin: 0;
+        width: 100%;
+        font-size: 1.25rem;
+        height: 1.25rem;
+        text-align: left;
+    }
     #key-cats {
-        grid-template-columns: repeat(2, max-content);
-        grid-template-rows: repeat(4, 1fr);
-        grid-auto-flow: column;
+        height: 5.25rem;
+        gap: 0.75rem 1.5rem;
+        overflow: hidden;
+        transition: all 400ms;
+    }
+    #key-cats span {
+        font-size: calc(0.875rem*5/6);
+    }
+    #key-cats li img {
+        height: 1.25rem;
+        width: 1.25rem;
+    }
+    #key.menu-hidden #key-cats {
+        height: 0;
+        margin-bottom: -0.75rem;
+    }
+    #key.menu-hidden button {
+        rotate: 180deg;
     }
 }
-
+@media (max-width: 715px) {
+    #key-cats {
+        height: 7.25rem;
+        grid-template-columns: repeat(2, max-content);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 0.75rem 1.5rem;
+    }
+}
 
 
 /* LAND ACKNOWLEDGEMENT POPUP */
@@ -283,37 +370,45 @@ img.category-icon:hover {
 
 /* OVERVIEW */
 aside {
-    width: min(15vw, 10rem);
+    width: clamp(7.75rem, 15vw, 10rem);
     background: var(--bright-blue);
     position: fixed;
-    height: calc(100vh - 6.75rem - 2*clamp(1.25rem, 2.5vw, 1.5rem));
-    top: calc(6.75rem + 2*clamp(1.25rem, 2.5vw, 1.5rem));
+    height: calc(100dvh - 9.75rem);
+    top: 9.75rem;
+    overflow-y: scroll;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
-aside > div {
+aside::after {
+    content: "";
     width: 0.375rem;
-    height: 100%;
-    position: absolute;
+    height: calc(100dvh - 9.75rem);
+    top: 9.75rem;
+    position: fixed;
     background: var(--dark-blue);
+    transition: height 400ms;
 }
 ol {
     width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-rows: repeat(38, 1fr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 1rem;
     gap: 0.25rem;
+    margin-block: auto;
 }
 aside li {
     width: 100%;
-    height: 0.75rem;
+    min-height: 0.75rem;
+    flex-shrink: 1;
     z-index: 5;
     display: block;
     transition: transform 200ms;
+    display: flex;
+    align-items: center;
 }
-aside li:hover {
+aside li:hover, aside li:focus-visible {
     transform: scale(1.2);
 }
 aside li.current-event-button div {
@@ -324,13 +419,16 @@ aside li.current-event-button span {
 }
 aside a {
     width: 100%;
-    height: 100%;
     display: grid;
     grid-template-columns: 1fr 0.75rem 1fr;
     grid-template-rows: 0.75rem;
     gap: 0.25rem;
     align-items: center;
     justify-items: center;
+}
+aside a:focus-visible {
+    outline-offset: 0px;
+    outline: 3px solid var(--light-blue);
 }
 aside span {
     display: block;
@@ -360,14 +458,27 @@ aside li:nth-of-type(2n) span {
 }
 @media (max-width: 1250px) {
     aside {
-        height: calc(100vh - 7.5rem - 3*clamp(1.25rem, 2.5vw, 1.5rem));
-        top: calc(7.5rem + 3*clamp(1.25rem, 2.5vw, 1.5rem));
+        height: calc(100dvh - 11.625rem);
+        top: 11.625rem;
+    }
+    aside::after {
+        height: calc(100dvh - 11.625rem);
+        top: 11.625rem;
     }
 }
 @media (max-width: 975px) {
     aside {
-        height: calc(100vh - 8.25rem - 4*clamp(1.25rem, 2.5vw, 1.5rem));
-        top: calc(8.25rem + 4*clamp(1.25rem, 2.5vw, 1.5rem));
+        height: calc(100dvh - 6.75rem);
+        top: 6.75rem;
+        transition: all 400ms;
+    }
+    aside::after {
+        height: calc(100dvh - 6.75rem);
+        top: 6.75rem;
+    }
+    body:not(:has(#key.menu-hidden)) aside {
+        height: calc(100dvh - 12.75rem);
+        top: 12.75rem;
     }
     aside li:nth-of-type(2n) span {
         grid-column: 1 / 2;
@@ -378,8 +489,12 @@ aside li:nth-of-type(2n) span {
         text-align: left;
     }
 }
-
-
+@media (max-width: 715px) {
+    body:not(:has(#key.menu-hidden)) aside {
+        height: calc(100dvh - 14.75rem);
+        top: 14.75rem;
+    }
+}
 
 /* TIMELINE ENTRY */
 
@@ -395,9 +510,10 @@ main {
     padding-inline: 2rem;
     justify-items: center;
     align-items: center;
-    min-height: 50vh;
     grid-template-columns: 2fr 2rem 1fr 2rem 2fr;
     scroll-margin-top: calc((50vh + 6.75rem + 2*clamp(1.25rem, 2.5vw, 1.5rem))/2);
+    min-height: 50vh;
+    position: relative;
 }
 .entry-right {
     grid-template-areas: "image image image line event";
@@ -408,8 +524,8 @@ main {
 .line {
     grid-area: line;
     background: var(--bright-orange);
-    width: 2rem;
-    min-height: inherit;
+    position: absolute;
+    inset: 0 0 0 0;
 }
 @media (max-width: 1250px) {
     .timeline-entry {
@@ -444,7 +560,7 @@ main {
 .event {
     display: grid;
     width: min(22rem, 100%);
-    grid-template-rows: 1.5rem 3px max-content;
+    grid-template-rows: max-content 3px max-content;
     row-gap: 0.5rem;
     grid-area: event;
     position: relative;
@@ -453,25 +569,28 @@ main {
     grid-template-areas: "year cats .   "
                          "rule rule rule"
                          "evnt evnt .   ";
-    grid-template-columns: 2fr 1fr 4rem;
+    grid-template-columns: 1fr max-content 4rem;
     justify-self: right;
 }
 .entry-right .event {
     grid-template-areas: ".    year cats"
                          "rule rule rule"
                          ".    evnt evnt";
-    grid-template-columns: 4rem 2fr 1fr;
+    grid-template-columns: 4rem 1fr max-content;
     justify-self: left;
 }
 .event h3 {
     font-family: "Urbana", sans-serif;
-    font-size: min(2.1vw, 1.8rem);
-    line-height: 1.5rem;
+    font-size: 1.8rem;
+    height: clamp(1.25rem, 2.5vw, 1.5rem);
+    line-height: 1;
     color: var(--dark-orange);
     grid-area: year;
 }
 .event h3.year-long {
-    font-size: min(1.75vw, 1.5rem);
+    font-size: 1.5rem;
+    height: clamp(1.25rem, 2.5vw, 1.5rem);
+    line-height: 1.3;
 }
 .cats {
     display: flex;
@@ -493,7 +612,7 @@ main {
     width: 4rem;
     height: 4rem;
     position: absolute;
-    top: 1.5px;
+    top: calc(1.5px - 1.5rem + clamp(1.25rem, 2.5vw, 1.5rem));
     background: var(--dark-orange);
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
@@ -502,7 +621,7 @@ main {
     width: 3.5rem;
     height: 3.5rem;
     position: absolute;
-    top: calc(1.5px + 0.25rem);
+    top: calc(1.5px - 1.25rem + clamp(1.25rem, 2.5vw, 1.5rem));
     background: var(--white);
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
@@ -526,10 +645,12 @@ main {
     }
     .event h3 {
         font-size: clamp(1.5rem, 3vw, 1.8rem);
-        line-height: clamp(1.25rem, 2.5vw, 1.5rem);
     }
     .event h3.year-long {
         font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+    }
+    .event p {
+        font-size: clamp(calc(5rem/6), calc(5vw/3), 1rem);
     }
     .entry-right .event {
         grid-template-areas: "year cats .   "
@@ -589,6 +710,11 @@ main {
     color: var(--dark-orange);
     margin-top: 0.5rem;
 }
+@media (max-width: 975px) {
+    .timeline-entry figure figcaption {
+        font-size: clamp(calc(4.375rem/6), calc(4.375vw/3), 0.875rem);
+    }
+}
 
 
 
@@ -606,6 +732,7 @@ main {
 #entry-end .line {
     height: 50%;
     align-self: self-start;
+    min-height: 50%;
 }
 #entry-end .event:before, #entry-end .event:after {
     top: 50%;

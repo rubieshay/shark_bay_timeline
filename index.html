@@ -18,59 +18,64 @@
                 <span>Land Acknowledgement</span>
             </button>
         </section>
-        <section id="key">
-            <h2>Event Categories</h2>
+        <nav id="key">
+            <div>
+                <h2>Event Categories</h2>
+                <button onclick="expandMenu()">
+                    <img src="graphics/down_arrow.svg" alt="expand-menu-icon">
+                </button>
+            </div>
             <ul id="key-cats">
                 <li id="cat-1">
                     <a href="subpages/geological.html">
                         <img class="category-icon key-cat" src="graphics/timeline_category_icons-1.svg" alt="Geological formations and changes icon">
-                    </a>
                     <span>Geological Formations & Changes</span>
+                    </a>
                 </li>
                 <li id="cat-2">
                     <a href="subpages/aboriginal.html">
                         <img class="category-icon key-cat" src="graphics/timeline_category_icons-2.svg" alt="Aboriginal activity icon">
+                        <span>Aboriginal Activity</span>
                     </a>
-                    <span>Aboriginal Activity</span>
                 </li>
                 <li id="cat-3">
                     <a href="subpages/european.html">
                         <img class="category-icon key-cat" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
+                        <span>European Settler Activity</span>
                     </a>
-                    <span>European Settler Activity</span>
                 </li>
                 <li id="cat-4">
                     <a href="subpages/land.html">
                         <img class="category-icon key-cat" src="graphics/timeline_category_icons-4.svg" alt="Land purchases and classifications icon">
+                        <span>Land Purchases & Classifications</span>
                     </a>
-                    <span>Land Purchases & Classifications</span>
                 </li>
                 <li id="cat-5">
                     <a href="subpages/invasive.html">
                         <img class="category-icon key-cat" src="graphics/timeline_category_icons-5.svg" alt="Invasive populations and species icon">
+                        <span>Invasive Populations & Species</span>
                     </a>
-                    <span>Invasive Populations & Species</span>
                 </li>
                 <li id="cat-6">
                     <a href="subpages/reintroduced.html">
                         <img class="category-icon key-cat" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
+                        <span>Reintroduction of Species</span>
                     </a>
-                    <span>Reintroduction of Species</span>
                 </li>
                 <li id="cat-7">
                     <a href="subpages/project_eden.html">
                         <img class="category-icon key-cat" src="graphics/timeline_category_icons-7.svg" alt="Project Eden icon">
+                        <span>Project Eden</span>
                     </a>
-                    <span>Project Eden</span>
                 </li>
                 <li id="cat-8">
                     <a href="subpages/return_to_1616.html">
                         <img class="category-icon key-cat" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
+                        <span>Return to 1616 Project</span>
                     </a>
-                    <span>Return to 1616 Project</span>
                 </li>
             </ul>
-        </section>
+        </nav>
     </header>
     
     <section class="popup-hidden" id="popup-container">
@@ -98,7 +103,6 @@
     </section>
 
     <aside>
-        <div aria-hidden="true"></div>
         <ol>
             <li id="event-button-01">
                 <a href="#event-01">
@@ -336,17 +340,17 @@
             <div class="line"></div>
         </section>
 
-        <section id="event-01" class="timeline-entry entry-left">
+        <section id="event-01" class="timeline-entry entry-left" onmouseover="hoverCategories([1])" onmouseout="unhoverCategories([1])">
             <figure>
                 <img src="images/stromatolite_water.jpg" alt="Stromatolites submerged under water">
                 <figcaption>Stromatolites submerged under water</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([1])" onmouseout="unhoverCategories([1])">
+            <div class="event">
                 <h3 class="year-long">3B YEARS AGO</h3>
                 <div class="cats">
                     <a href="subpages/geological.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([1])" onmouseout="unhoverCategory([1])" src="graphics/timeline_category_icons-1.svg" alt="Geological formations and changes icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-1.svg" alt="Geological formations and changes icon">
                     </a>
                 </div>
                 <hr>
@@ -359,17 +363,17 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-02" class="timeline-entry entry-right">
+        <section id="event-02" class="timeline-entry entry-right" onmouseover="hoverCategories([1])" onmouseout="unhoverCategories([1])">
             <figure>
                 <img src="images/stromatolite_inside.jpg" alt="The interior of a stromatolite">
                 <figcaption>The interior of a stromatolite</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([1])" onmouseout="unhoverCategories([1])">
+            <div class="event">
                 <h3 class="year-long">2B YEARS AGO</h3>
                 <div class="cats">
                     <a href="subpages/geological.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([1])" onmouseout="unhoverCategory([1])" src="graphics/timeline_category_icons-1.svg" alt="Geological formations and changes icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-1.svg" alt="Geological formations and changes icon">
                     </a>
                 </div>
                 <hr>
@@ -382,17 +386,17 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
         
-        <section id="event-03" class="timeline-entry entry-left">
+        <section id="event-03" class="timeline-entry entry-left" onmouseover="hoverCategories([1])" onmouseout="unhoverCategories([1])">
             <figure>
                 <img src="images/peron_sandstone.png" alt="Peron Sandstone">
                 <figcaption>Peron Sandstone</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([1])" onmouseout="unhoverCategories([1])">
+            <div class="event">
                 <h3 class="year-long">2M - 10K YEARS AGO</h3>
                 <div class="cats">
                     <a href="subpages/geological.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([1])" onmouseout="unhoverCategory([1])" src="graphics/timeline_category_icons-1.svg" alt="Geological formations and changes icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-1.svg" alt="Geological formations and changes icon">
                     </a>
                 </div>
                 <hr>
@@ -405,17 +409,17 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-04" class="timeline-entry entry-right">
+        <section id="event-04" class="timeline-entry entry-right" onmouseover="hoverCategories([1])" onmouseout="unhoverCategories([1])">
             <figure>
                 <img src="images/shells.jpg" alt="White shell which create Tamala Limestone">
                 <figcaption>White shells which create Tamala Limestone</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([1])" onmouseout="unhoverCategories([1])">
+            <div class="event">
                 <h3 class="year-long">1M - 10K YEARS AGO</h3>
                 <div class="cats">
                     <a href="subpages/geological.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([1])" onmouseout="unhoverCategory([1])" src="graphics/timeline_category_icons-1.svg" alt="Geological formations and changes icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-1.svg" alt="Geological formations and changes icon">
                     </a>
                 </div>
                 <hr>
@@ -428,17 +432,17 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
         
-        <section id="event-05" class="timeline-entry entry-left">
+        <section id="event-05" class="timeline-entry entry-left" onmouseover="hoverCategories([2])" onmouseout="unhoverCategories([2])">
             <figure>
                 <img src="images/aboriginal_cave.jpg" alt="Cave shelter at Monkey Mia">
                 <figcaption>Cave shelter at Monkey Mia</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([2])" onmouseout="unhoverCategories([2])">
+            <div class="event">
                 <h3 class="year-long">30K YEARS AGO</h3>
                 <div class="cats">
                     <a href="subpages/aboriginal.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([2])" onmouseout="unhoverCategory([2])" src="graphics/timeline_category_icons-2.svg" alt="Aboriginal activity icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-2.svg" alt="Aboriginal activity icon">
                     </a>
                 </div>
                 <hr>
@@ -451,17 +455,17 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-06" class="timeline-entry entry-right">
+        <section id="event-06" class="timeline-entry entry-right" onmouseover="hoverCategories([1])" onmouseout="unhoverCategories([1])">
             <figure>
                 <img src="images/birrida_big_lagoon.jpg" alt="A flooded birrida - big lagoon">
                 <figcaption>A flooded birrida - big lagoon</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([1])" onmouseout="unhoverCategories([1])">
+            <div class="event">
                 <h3 class="year-long">10K - 8K YEARS AGO</h3>
                 <div class="cats">
                     <a href="subpages/geological.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([1])" onmouseout="unhoverCategory([1])" src="graphics/timeline_category_icons-1.svg" alt="Geological formations and changes icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-1.svg" alt="Geological formations and changes icon">
                     </a>
                 </div>
                 <hr>
@@ -474,17 +478,17 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
         
-        <section id="event-07" class="timeline-entry entry-left">
+        <section id="event-07" class="timeline-entry entry-left" onmouseover="hoverCategories([1])" onmouseout="unhoverCategories([1])">
             <figure>
                 <img src="images/zuytdorp_cliffs.jpg" alt="Zuytdorp cliffs">
                 <figcaption>Zuytdorp cliffs</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([1])" onmouseout="unhoverCategories([1])">
+            <div class="event">
                 <h3 class="year-long">10K - 5K YEARS AGO</h3>
                 <div class="cats">
                     <a href="subpages/geological.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([1])" onmouseout="unhoverCategory([1])" src="graphics/timeline_category_icons-1.svg" alt="Geological formations and changes icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-1.svg" alt="Geological formations and changes icon">
                     </a>
                 </div>
                 <hr>
@@ -497,17 +501,17 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-08" class="timeline-entry entry-right">
+        <section id="event-08" class="timeline-entry entry-right" onmouseover="hoverCategories([1])" onmouseout="unhoverCategories([1])">
             <figure>
                 <img src="images/dorre_island.jpg" alt="Dorre Island">
                 <figcaption>Dorre Island</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([1])" onmouseout="unhoverCategories([1])">
+            <div class="event">
                 <h3 class="year-long">6K - 3K YEARS AGO</h3>
                 <div class="cats">
                     <a href="subpages/geological.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([1])" onmouseout="unhoverCategory([1])" src="graphics/timeline_category_icons-1.svg" alt="Geological formations and changes icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-1.svg" alt="Geological formations and changes icon">
                     </a>
                 </div>
                 <hr>
@@ -520,17 +524,17 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
         
-        <section id="event-09" class="timeline-entry entry-left">
+        <section id="event-09" class="timeline-entry entry-left" onmouseover="hoverCategories([3])" onmouseout="unhoverCategories([3])">
             <figure>
                 <img src="images/dirk_hartog_plate.jpg" alt="A plate enscribed with details of the visit which was left on the island">
                 <figcaption>A plate enscribed with details of the visit which was left on the island</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([3])" onmouseout="unhoverCategories([3])">
+            <div class="event">
                 <h3>1616</h3>
                 <div class="cats">
                     <a href="subpages/european.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([3])" onmouseout="unhoverCategory([3])" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
                     </a>
                 </div>
                 <hr>
@@ -543,20 +547,20 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-10" class="timeline-entry entry-right">
+        <section id="event-10" class="timeline-entry entry-right" onmouseover="hoverCategories([2, 3])" onmouseout="unhoverCategories([2, 3])">
             <figure>
                 <img src="images/aboriginal_huts.jpg" alt="Aboriginal huts as depicted by a European in 1803">
                 <figcaption>Aboriginal huts as depicted by a European in 1803</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([2, 3])" onmouseout="unhoverCategories([2, 3])">
+            <div class="event">
                 <h3>1772</h3>
                 <div class="cats">
                     <a href="subpages/aboriginal.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([2])" onmouseout="unhoverCategory([2])" src="graphics/timeline_category_icons-2.svg" alt="Aboriginal activity icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-2.svg" alt="Aboriginal activity icon">
                     </a>
                     <a href="subpages/european.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([3])" onmouseout="unhoverCategory([3])" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
                     </a>
                 </div>
                 <hr>
@@ -569,17 +573,17 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-11" class="timeline-entry entry-left">
+        <section id="event-11" class="timeline-entry entry-left" onmouseover="hoverCategories([3])" onmouseout="unhoverCategories([3])">
             <figure>
                 <img src="images/dibblers.jpg" alt="The dibbler - one species that did not survive the changes to the land which has now been brought back">
                 <figcaption>The dibbler - one species that did not survive the changes to the land which has now been brought back</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([3])" onmouseout="unhoverCategories([3])">
+            <div class="event">
                 <h3>1801</h3>
                 <div class="cats">
                     <a href="subpages/european.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([3])" onmouseout="unhoverCategory([3])" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
                     </a>
                 </div>
                 <hr>
@@ -592,17 +596,17 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-12" class="timeline-entry entry-right">
+        <section id="event-12" class="timeline-entry entry-right" onmouseover="hoverCategories([3])" onmouseout="unhoverCategories([3])">
             <figure>
                 <img src="images/guano_mining.jpg" alt="Guano mining">
                 <figcaption>Guano mining</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([3])" onmouseout="unhoverCategories([3])">
+            <div class="event">
                 <h3>1850</h3>
                 <div class="cats">
                     <a href="subpages/european.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([3])" onmouseout="unhoverCategory([3])" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
                     </a>
                 </div>
                 <hr>
@@ -615,17 +619,17 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-13" class="timeline-entry entry-left">
+        <section id="event-13" class="timeline-entry entry-left" onmouseover="hoverCategories([3])" onmouseout="unhoverCategories([3])">
             <figure>
                 <img src="images/pearling.jpg" alt="Boiling out pearls">
                 <figcaption>Boiling out pearls</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([3])" onmouseout="unhoverCategories([3])">
+            <div class="event">
                 <h3>1850s</h3>
                 <div class="cats">
                     <a href="subpages/european.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([3])" onmouseout="unhoverCategory([3])" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
                     </a>
                 </div>
                 <hr>
@@ -638,20 +642,20 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-14" class="timeline-entry entry-right">
+        <section id="event-14" class="timeline-entry entry-right" onmouseover="hoverCategories([3, 5])" onmouseout="unhoverCategories([3, 5])">
             <figure>
                 <img src="images/shearing_shed.jpg" alt="Hamelin Station shearing shed">
                 <figcaption>Hamelin Station shearing shed</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([3, 5])" onmouseout="unhoverCategories([3, 5])">
+            <div class="event">
                 <h3>1869</h3>
                 <div class="cats">
                     <a href="subpages/european.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([3])" onmouseout="unhoverCategory([3])" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
                     </a>
                     <a href="subpages/invasive.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([5])" onmouseout="unhoverCategory([5])" src="graphics/timeline_category_icons-5.svg" alt="Invasive populations and species icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-5.svg" alt="Invasive populations and species icon">
                     </a>
                 </div>
                 <hr>
@@ -664,17 +668,17 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-15" class="timeline-entry entry-left">
+        <section id="event-15" class="timeline-entry entry-left" onmouseover="hoverCategories([3])" onmouseout="unhoverCategories([3])">
             <figure>
                 <img src="images/sandalwood.jpg" alt="Sandalwood tree">
                 <figcaption>Sandalwood tree</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([3])" onmouseout="unhoverCategories([3])">
+            <div class="event">
                 <h3>1890s</h3>
                 <div class="cats">
                     <a href="subpages/european.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([3])" onmouseout="unhoverCategory([3])" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
                     </a>
                 </div>
                 <hr>
@@ -687,17 +691,17 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-16" class="timeline-entry entry-right">
+        <section id="event-16" class="timeline-entry entry-right" onmouseover="hoverCategories([3])" onmouseout="unhoverCategories([3])">
             <figure>
                 <img src="images/fishing.jpg" alt="Net fishing">
                 <figcaption>Net fishing</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([3])" onmouseout="unhoverCategories([3])">
+            <div class="event">
                 <h3>1930s</h3>
                 <div class="cats">
                     <a href="subpages/european.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([3])" onmouseout="unhoverCategory([3])" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
                     </a>
                 </div>
                 <hr>
@@ -710,20 +714,20 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-17" class="timeline-entry entry-left">
+        <section id="event-17" class="timeline-entry entry-left" onmouseover="hoverCategories([3, 5])" onmouseout="unhoverCategories([3, 5])">
             <figure>
                 <img src="images/sheep_drinking.jpg" alt="Sheep drinking from a trough">
                 <figcaption>Sheep drinking from a trough</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([3, 5])" onmouseout="unhoverCategories([3, 5])">
+            <div class="event">
                 <h3>1960s</h3>
                 <div class="cats">
                     <a href="subpages/european.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([3])" onmouseout="unhoverCategory([3])" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
                     </a>
                     <a href="subpages/invasive.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([5])" onmouseout="unhoverCategory([5])" src="graphics/timeline_category_icons-5.svg" alt="Invasive populations and species icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-5.svg" alt="Invasive populations and species icon">
                     </a>
                 </div>
                 <hr>
@@ -736,17 +740,17 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-18" class="timeline-entry entry-right">
+        <section id="event-18" class="timeline-entry entry-right" onmouseover="hoverCategories([4])" onmouseout="unhoverCategories([4])">
             <figure>
                 <img src="images/peron_national_park.jpg" alt="Francois Peron National Park">
                 <figcaption>Francois Peron National Park</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([4])" onmouseout="unhoverCategories([4])">
+            <div class="event">
                 <h3>1990</h3>
                 <div class="cats">
                     <a href="subpages/land.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([4])" onmouseout="unhoverCategory([4])" src="graphics/timeline_category_icons-4.svg" alt="Land purchases and classifications icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-4.svg" alt="Land purchases and classifications icon">
                     </a>
                 </div>
                 <hr>
@@ -759,17 +763,17 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-19" class="timeline-entry entry-left">
+        <section id="event-19" class="timeline-entry entry-left" onmouseover="hoverCategories([4])" onmouseout="unhoverCategories([4])">
             <figure>
                 <img src="images/shark_bay_satellite.png" alt="Shark Bay satellite view">
                 <figcaption>Shark Bay satellite view</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([4])" onmouseout="unhoverCategories([4])">
+            <div class="event">
                 <h3>1991</h3>
                 <div class="cats">
                     <a href="subpages/land.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([4])" onmouseout="unhoverCategory([4])" src="graphics/timeline_category_icons-4.svg" alt="Land purchases and classifications icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-4.svg" alt="Land purchases and classifications icon">
                     </a>
                 </div>
                 <hr>
@@ -782,23 +786,23 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-20" class="timeline-entry entry-right">
+        <section id="event-20" class="timeline-entry entry-right" onmouseover="hoverCategories([5, 6, 7])" onmouseout="unhoverCategories([5, 6, 7])">
             <figure>
                 <img src="images/goat_pen.jpg" alt="Goats in enclosure">
                 <figcaption>Goats in enclosure</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([5, 6, 7])" onmouseout="unhoverCategories([5, 6, 7])">
+            <div class="event">
                 <h3>1995</h3>
                 <div class="cats">
                     <a href="subpages/invasive.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([5])" onmouseout="unhoverCategory([5])" src="graphics/timeline_category_icons-5.svg" alt="Invasive populations and species icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-5.svg" alt="Invasive populations and species icon">
                     </a>
                     <a href="subpages/reintroduced.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
                     </a>
                     <a href="subpages/project_eden.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([7])" onmouseout="unhoverCategory([7])" src="graphics/timeline_category_icons-7.svg" alt="Project Eden icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-7.svg" alt="Project Eden icon">
                     </a>
                 </div>
                 <hr>
@@ -811,20 +815,20 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-21" class="timeline-entry entry-left">
+        <section id="event-21" class="timeline-entry entry-left" onmouseover="hoverCategories([6, 7])" onmouseout="unhoverCategories([6, 7])">
             <figure>
                 <img src="images/tagging_bilby.jpg" alt="Bilby being tagged at the Peron Captive Breeding Centre">
                 <figcaption>Bilby being tagged at the Peron Captive Breeding Centre</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([6, 7])" onmouseout="unhoverCategories([6, 7])">
+            <div class="event">
                 <h3>1996</h3>
                 <div class="cats">
                     <a href="subpages/reintroduced.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
                     </a>
                     <a href="subpages/project_eden.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([7])" onmouseout="unhoverCategory([7])" src="graphics/timeline_category_icons-7.svg" alt="Project Eden icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-7.svg" alt="Project Eden icon">
                     </a>
                 </div>
                 <hr>
@@ -837,20 +841,20 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-22" class="timeline-entry entry-right">
+        <section id="event-22" class="timeline-entry entry-right" onmouseover="hoverCategories([6, 7])" onmouseout="unhoverCategories([6, 7])">
             <figure>
                 <img src="images/malleefowl.jpg" alt="Malleefowl">
                 <figcaption>Malleefowl</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([6, 7])" onmouseout="unhoverCategories([6, 7])">
+            <div class="event">
                 <h3>1997</h3>
                 <div class="cats">
                     <a href="subpages/reintroduced.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
                     </a>
                     <a href="subpages/project_eden.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([7])" onmouseout="unhoverCategory([7])" src="graphics/timeline_category_icons-7.svg" alt="Project Eden icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-7.svg" alt="Project Eden icon">
                     </a>
                 </div>
                 <hr>
@@ -863,17 +867,17 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-23" class="timeline-entry entry-left">
+        <section id="event-23" class="timeline-entry entry-left" onmouseover="hoverCategories([4])" onmouseout="unhoverCategories([4])">
             <figure>
                 <img src="images/faure_island.jpg" alt="Faure Island">
                 <figcaption>Faure Island</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([4])" onmouseout="unhoverCategories([4])">
+            <div class="event">
                 <h3>1999</h3>
                 <div class="cats">
                     <a href="subpages/land.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([4])" onmouseout="unhoverCategory([4])" src="graphics/timeline_category_icons-4.svg" alt="Land purchases and classifications icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-4.svg" alt="Land purchases and classifications icon">
                     </a>
                 </div>
                 <hr>
@@ -886,17 +890,17 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-24" class="timeline-entry entry-right">
+        <section id="event-24" class="timeline-entry entry-right" onmouseover="hoverCategories([4])" onmouseout="unhoverCategories([4])">
             <figure>
                 <img src="images/nanga_bay.jpg" alt="Nanga bay">
                 <figcaption>Nanga bay</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([4])" onmouseout="unhoverCategories([4])">
+            <div class="event">
                 <h3>2000</h3>
                 <div class="cats">
                     <a href="subpages/land.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([4])" onmouseout="unhoverCategory([4])" src="graphics/timeline_category_icons-4.svg" alt="Land purchases and classifications icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-4.svg" alt="Land purchases and classifications icon">
                     </a>
                 </div>
                 <hr>
@@ -909,20 +913,20 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-25" class="timeline-entry entry-left">
+        <section id="event-25" class="timeline-entry entry-left" onmouseover="hoverCategories([6, 7])" onmouseout="unhoverCategories([6, 7])">
             <figure>
                 <img src="images/rufous-hare-wallaby.jpg" alt="Rufous hare-wallaby">
                 <figcaption>Rufous hare-wallaby</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([6, 7])" onmouseout="unhoverCategories([6, 7])">
+            <div class="event">
                 <h3>2001</h3>
                 <div class="cats">
                     <a href="subpages/reintroduced.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
                     </a>
                     <a href="subpages/project_eden.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([7])" onmouseout="unhoverCategory([7])" src="graphics/timeline_category_icons-7.svg" alt="Project Eden icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-7.svg" alt="Project Eden icon">
                     </a>
                 </div>
                 <hr>
@@ -935,20 +939,20 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-26" class="timeline-entry entry-right">
+        <section id="event-26" class="timeline-entry entry-right" onmouseover="hoverCategories([6, 7])" onmouseout="unhoverCategories([6, 7])">
             <figure>
                 <img src="images/banded-hare-wallaby.jpg" alt="Banded hare-wallaby">
                 <figcaption>Banded hare-wallaby</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([6, 7])" onmouseout="unhoverCategories([6, 7])">
+            <div class="event">
                 <h3>2004</h3>
                 <div class="cats">
                     <a href="subpages/reintroduced.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
                     </a>
                     <a href="subpages/project_eden.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([7])" onmouseout="unhoverCategory([7])" src="graphics/timeline_category_icons-7.svg" alt="Project Eden icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-7.svg" alt="Project Eden icon">
                     </a>
                 </div>
                 <hr>
@@ -961,20 +965,20 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-27" class="timeline-entry entry-left">
+        <section id="event-27" class="timeline-entry entry-left" onmouseover="hoverCategories([6, 7])" onmouseout="unhoverCategories([6, 7])">
             <figure>
                 <img src="images/quenda.jpg" alt="Quenda (southern brown bandicoot)">
                 <figcaption>Quenda (southern brown bandicoot)</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([6, 7])" onmouseout="unhoverCategories([6, 7])">
+            <div class="event">
                 <h3>2006</h3>
                 <div class="cats">
                     <a href="subpages/reintroduced.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
                     </a>
                     <a href="subpages/project_eden.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([7])" onmouseout="unhoverCategory([7])" src="graphics/timeline_category_icons-7.svg" alt="Project Eden icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-7.svg" alt="Project Eden icon">
                     </a>
                 </div>
                 <hr>
@@ -987,17 +991,17 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-28" class="timeline-entry entry-right">
+        <section id="event-28" class="timeline-entry entry-right" onmouseover="hoverCategories([4])" onmouseout="unhoverCategories([4])">
             <figure>
                 <img src="images/cape_inscription.jpg" alt="Cape Inscription at Dirk Hartog Island">
                 <figcaption>Cape Inscription at Dirk Hartog Island</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([4])" onmouseout="unhoverCategories([4])">
+            <div class="event">
                 <h3>2009</h3>
                 <div class="cats">
                     <a href="subpages/land.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([4])" onmouseout="unhoverCategory([4])" src="graphics/timeline_category_icons-4.svg" alt="Land purchases and classifications icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-4.svg" alt="Land purchases and classifications icon">
                     </a>
                 </div>
                 <hr>
@@ -1010,23 +1014,23 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-29" class="timeline-entry entry-left">
+        <section id="event-29" class="timeline-entry entry-left" onmouseover="hoverCategories([5, 6, 8])" onmouseout="unhoverCategories([5, 6, 8])">
             <figure>
                 <img src="images/dirk_hartog_island_landscape.jpg" alt="Dirk Hartog Island landscape">
                 <figcaption>Dirk Hartog Island landscape</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([5, 6, 8])" onmouseout="unhoverCategories([5, 6, 8])">
+            <div class="event">
                 <h3>2012</h3>
                 <div class="cats">
                     <a href="subpages/invasive.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([5])" onmouseout="unhoverCategory([5])" src="graphics/timeline_category_icons-5.svg" alt="Invasive populations and species icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-5.svg" alt="Invasive populations and species icon">
                     </a>
                     <a href="subpages/reintroduced.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
                     </a>
                     <a href="subpages/return_to_1616.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([8])" onmouseout="unhoverCategory([8])" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
                     </a>
                 </div>
                 <hr>
@@ -1039,20 +1043,20 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-30" class="timeline-entry entry-right">
+        <section id="event-30" class="timeline-entry entry-right" onmouseover="hoverCategories([6, 7])" onmouseout="unhoverCategories([6, 7])">
             <figure>
                 <img src="images/bilby.png" alt="Bilby">
                 <figcaption>Bilby</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([6, 7])" onmouseout="unhoverCategories([6, 7])">
+            <div class="event">
                 <h3>2013</h3>
                 <div class="cats">
                     <a href="subpages/reintroduced.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
                     </a>
                     <a href="subpages/project_eden.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([7])" onmouseout="unhoverCategory([7])" src="graphics/timeline_category_icons-7.svg" alt="Project Eden icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-7.svg" alt="Project Eden icon">
                     </a>
                 </div>
                 <hr>
@@ -1065,17 +1069,17 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-31" class="timeline-entry entry-left">
+        <section id="event-31" class="timeline-entry entry-left" onmouseover="hoverCategories([4])" onmouseout="unhoverCategories([4])">
             <figure>
                 <img src="images/hamelin_pool.jpg" alt="Hamelin Pool coastline">
                 <figcaption>Hamelin Pool coastline</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([4])" onmouseout="unhoverCategories([4])">
+            <div class="event">
                 <h3>2015</h3>
                 <div class="cats">
                     <a href="subpages/land.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([4])" onmouseout="unhoverCategory([4])" src="graphics/timeline_category_icons-4.svg" alt="Land purchases and classifications icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-4.svg" alt="Land purchases and classifications icon">
                     </a>
                 </div>
                 <hr>
@@ -1088,20 +1092,20 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-32" class="timeline-entry entry-right">
+        <section id="event-32" class="timeline-entry entry-right" onmouseover="hoverCategories([5, 8])" onmouseout="unhoverCategories([5, 8])">
             <figure>
                 <img src="images/sheep.jpg" alt="Sheep at Hamelin station">
                 <figcaption>Sheep at Hamelin station</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([5, 8])" onmouseout="unhoverCategories([5, 8])">
+            <div class="event">
                 <h3>2016</h3>
                 <div class="cats">
                     <a href="subpages/invasive.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([5])" onmouseout="unhoverCategory([5])" src="graphics/timeline_category_icons-5.svg" alt="Invasive populations and species icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-5.svg" alt="Invasive populations and species icon">
                     </a>
                     <a href="subpages/return_to_1616.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([8])" onmouseout="unhoverCategory([8])" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
                     </a>
                 </div>
                 <hr>
@@ -1114,20 +1118,20 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-33" class="timeline-entry entry-left">
+        <section id="event-33" class="timeline-entry entry-left" onmouseover="hoverCategories([5, 8])" onmouseout="unhoverCategories([5, 8])">
             <figure>
                 <img src="images/goats.jpg" alt="Goats on Dirk Hartog Island">
                 <figcaption>Goats on Dirk Hartog Island</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([5, 8])" onmouseout="unhoverCategories([5, 8])" >
+            <div class="event" >
                 <h3>2017</h3>
                 <div class="cats">
                     <a href="subpages/invasive.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([5])" onmouseout="unhoverCategory([5])" src="graphics/timeline_category_icons-5.svg" alt="Invasive populations and species icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-5.svg" alt="Invasive populations and species icon">
                     </a>
                     <a href="subpages/return_to_1616.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([8])" onmouseout="unhoverCategory([8])" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
                     </a>
                 </div>
                 <hr>
@@ -1140,23 +1144,23 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-34" class="timeline-entry entry-right">
+        <section id="event-34" class="timeline-entry entry-right" onmouseover="hoverCategories([5, 6, 8])" onmouseout="unhoverCategories([5, 6, 8])">
             <figure>
                 <img src="images/feral_cat.jpg" alt="Feral cat at camera trap">
                 <figcaption>Feral cat at camera trap</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([5, 6, 8])" onmouseout="unhoverCategories([5, 6, 8])" >
+            <div class="event" >
                 <h3>2018</h3>
                 <div class="cats">
                     <a href="subpages/invasive.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([5])" onmouseout="unhoverCategory([5])" src="graphics/timeline_category_icons-5.svg" alt="Invasive populations and species icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-5.svg" alt="Invasive populations and species icon">
                     </a>
                     <a href="subpages/reintroduced.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
                     </a>
                     <a href="subpages/return_to_1616.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([8])" onmouseout="unhoverCategory([8])" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
                     </a>
                 </div>
                 <hr>
@@ -1169,20 +1173,20 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-35" class="timeline-entry entry-left">
+        <section id="event-35" class="timeline-entry entry-left" onmouseover="hoverCategories([6, 8])" onmouseout="unhoverCategories([6, 8])">
             <figure>
                 <img src="images/shark-bay-bandicoot.png" alt="Shark Bay bandicoot">
                 <figcaption>Shark Bay bandicoot</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([6, 8])" onmouseout="unhoverCategories([6, 8])">
+            <div class="event">
                 <h3>2019</h3>
                 <div class="cats">
                     <a href="subpages/reintroduced.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
                     </a>
                     <a href="subpages/return_to_1616.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([8])" onmouseout="unhoverCategory([8])" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
                     </a>
                 </div>
                 <hr>
@@ -1195,20 +1199,20 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-36" class="timeline-entry entry-right">
+        <section id="event-36" class="timeline-entry entry-right" onmouseover="hoverCategories([6, 8])" onmouseout="unhoverCategories([6, 8])">
             <figure>
                 <img src="images/shark-bay-mouse.jpg" alt="Shark Bay mouse">
                 <figcaption>Shark Bay mouse</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([6, 8])" onmouseout="unhoverCategories([6, 8])">
+            <div class="event">
                 <h3>2021</h3>
                 <div class="cats">
                     <a href="subpages/reintroduced.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
                     </a>
                     <a href="subpages/return_to_1616.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([8])" onmouseout="unhoverCategory([8])" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
                     </a>
                 </div>
                 <hr>
@@ -1221,20 +1225,20 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-37" class="timeline-entry entry-left">
+        <section id="event-37" class="timeline-entry entry-left" onmouseover="hoverCategories([6, 8])" onmouseout="unhoverCategories([6, 8])">
             <figure>
                 <img src="images/western_grasswren.png" alt="Western grasswren">
                 <figcaption>Western grasswren</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([6, 8])" onmouseout="unhoverCategories([6, 8])">
+            <div class="event">
                 <h3>2022</h3>
                 <div class="cats">
                     <a href="subpages/reintroduced.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
                     </a>
                     <a href="subpages/return_to_1616.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([8])" onmouseout="unhoverCategory([8])" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
                     </a>
                 </div>
                 <hr>
@@ -1247,20 +1251,20 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-38" class="timeline-entry entry-right">
+        <section id="event-38" class="timeline-entry entry-right" onmouseover="hoverCategories([6, 8])" onmouseout="unhoverCategories([6, 8])">
             <figure>
                 <img src="images/brush_tailed_mulgara.jpg" alt="Brush-tailed mulgara">
                 <figcaption>Brush-tailed mulgara</figcaption>
             </figure>
             <div class="line"></div>
-            <div class="event" onmouseover="hoverCategories([6, 8])" onmouseout="unhoverCategories([6, 8])">
+            <div class="event">
                 <h3>2023</h3>
                 <div class="cats">
                     <a href="subpages/reintroduced.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([6])" onmouseout="unhoverCategory([6])" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-6.svg" alt="Reintroduction of species icon">
                     </a>
                     <a href="subpages/return_to_1616.html">
-                        <img class="category-icon event-cat" onmouseover="hoverCategory([8])" onmouseout="unhoverCategory([8])" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
+                        <img class="category-icon event-cat" src="graphics/timeline_category_icons-8.svg" alt="Return to 1616 project icon">
                     </a>
                 </div>
                 <hr>

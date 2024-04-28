@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geological Formations & Changes</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="subpage.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ahg0fly.css">
+    <script src="../script.js"></script>
+    <link rel="icon" href="../graphics/logo_color.svg">
+</head>
+<body>
+    <header>
+        <section id="title-bar">
+            <h1><a href="../index.html">The Ecological History of Shark Bay</a></h1>
+            <button onclick="openPopup()">
+                <img src="../graphics/logo_light.svg" alt="logo">
+                <span>Land Acknowledgement</span>
+            </button>
+        </section>
+        <section id="category-header">
+            <a href="../index.html">
+                <img src="../graphics/back_arrow.svg" alt="Back arrow">
+                <span>All categories</span>
+            </a>
+            <h2>
+                <img class="category-icon key-cat" src="../graphics/timeline_category_icons-2.svg" alt="Aboriginal activity icon">
+                <span>Aboriginal Activity</span>
+            </h2>
+        </section>
+    </header>
+    
+    <section class="popup-hidden" id="popup-container">
+        <section id="popup-content">
+            <h2>Land Acknowledgement</h2>
+            <p>It is crucial to acknowledge that the land of Shark Bay is the traditional land of aboriginal groups, 
+                including the Malgana, Nanda and Gnulli peoples. The region&mdash;known as Gutharraguda in the Malgana 
+                language&mdash;contains about 130 registered heritage sites which are protected by the Aboriginal Heritage 
+                Act. It is illegal to disturb these sites.</p>
+            <p>European occupation has destroyed and harmed the ecology and people of the area, and cannot be ignored 
+                or dismissed. Today, aboriginal groups collaborate with the Parks and Wildlife Services to work 
+                towards research and conservation projects.</p>
+            <div>
+                <div>
+                    <p>“Nhanganha Gutharraguda, Wula guda nyinda.”</p>
+                    <h4>&mdash; Malgana &mdash;</h4>
+                </div>
+                <div>
+                    <p>“This is Shark Bay. You come this way.”</p>
+                    <h4>&mdash; English &mdash;</h4>
+                </div>
+            </div>
+            <button onclick="closePopup()"></button>
+        </section>
+    </section>
+
+    <aside>
+        <div aria-hidden="true"></div>
+        <ol>
+            <li id="event-button-05">
+                <a href="#event-05">
+                    <div ari-hidden="true"></div>
+                    <span>30K YA</span>
+                </a>
+            </li>
+            <li id="event-button-10">
+                <a href="#event-10">
+                    <div ari-hidden="true"></div>
+                    <span>1772</span>
+                </a>
+            </li>
+        </ol>
+    </aside>
+
+    <main>
+        <section id="top-line" class="timeline-entry entry-left">
+            <div class="line"></div>
+        </section>
+        
+        <section id="event-05" class="timeline-entry entry-left">
+            <figure>
+                <img src="../images/aboriginal_cave.jpg" alt="Cave shelter at Monkey Mia">
+                <figcaption>Cave shelter at Monkey Mia</figcaption>
+            </figure>
+            <div class="line"></div>
+            <div class="event">
+                <h3 class="year-long">30K YEARS AGO</h3>
+                <div class="cats">
+                    <a href="#">
+                        <img class="category-icon event-cat" src="../graphics/timeline_category_icons-2.svg" alt="Aboriginal activity icon">
+                    </a>
+                </div>
+                <hr>
+                <p>The land was first occupied by the aboriginal people.</p>
+            </div>
+        </section>
+
+        <section class="curve "aria-hidden="true">
+            <div class="curve-bottom curve-left" aria-hidden="true"></div>
+            <div class="curve-top curve-right" aria-hidden="true"></div>
+        </section>
+
+        <section id="event-10" class="timeline-entry entry-right">
+            <figure>
+                <img src="../images/aboriginal_huts.jpg" alt="Aboriginal huts as depicted by a European in 1803">
+                <figcaption>Aboriginal huts as depicted by a European in 1803</figcaption>
+            </figure>
+            <div class="line"></div>
+            <div class="event">
+                <h3>1772</h3>
+                <div class="cats">
+                    <a href="#">
+                        <img class="category-icon event-cat" src="../graphics/timeline_category_icons-2.svg" alt="Aboriginal activity icon">
+                    </a>
+                    <a href="european.html">
+                        <img class="category-icon event-cat" src="../graphics/timeline_category_icons-3.svg" alt="European settler activity icon">
+                    </a>
+                </div>
+                <hr>
+                <p>French explorers first interacted with the aboriginal people.</p>
+            </div>
+        </section>
+
+        <section id="end-line" class="timeline-entry entry-right">
+            <div class="line"></div>
+        </section>
+    </main>
+</body>
+</html>
