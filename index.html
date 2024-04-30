@@ -18,8 +18,8 @@
                 <span>Land Acknowledgement</span>
             </button>
         </section>
-        <nav id="key">
-            <div>
+        <nav id="key" class="menu-hidden">
+            <div class="menu-title">
                 <h2>Event Categories</h2>
                 <button onclick="expandMenu()">
                     <img src="graphics/down_arrow.svg" alt="expand-menu-icon">
@@ -102,7 +102,13 @@
         </section>
     </section>
 
-    <aside>
+    <aside id="overview" class="overview-hidden">
+        <div class="menu-title">
+            <h2>Overview</h2>
+            <button onclick="expandOverview()">
+                <img src="graphics/down_arrow.svg" alt="expand-menu-icon">
+            </button>
+        </div>
         <ol>
             <li id="event-button-01">
                 <a href="#event-01">
@@ -340,7 +346,7 @@
             <div class="line"></div>
         </section>
 
-        <section id="event-01" class="timeline-entry entry-left" onmouseover="hoverCategories([1])" onmouseout="unhoverCategories([1])">
+        <section id="event-01" class="timeline-entry entry-left hover-1">
             <figure>
                 <img src="images/stromatolite_water.jpg" alt="Stromatolites submerged under water">
                 <figcaption>Stromatolites submerged under water</figcaption>
@@ -363,7 +369,7 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-02" class="timeline-entry entry-right" onmouseover="hoverCategories([1])" onmouseout="unhoverCategories([1])">
+        <section id="event-02" class="timeline-entry entry-right hover-1">
             <figure>
                 <img src="images/stromatolite_inside.jpg" alt="The interior of a stromatolite">
                 <figcaption>The interior of a stromatolite</figcaption>
@@ -386,7 +392,7 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
         
-        <section id="event-03" class="timeline-entry entry-left" onmouseover="hoverCategories([1])" onmouseout="unhoverCategories([1])">
+        <section id="event-03" class="timeline-entry entry-left hover-1">
             <figure class="feature-img">
                 <div>
                     <img src="images/peron_sandstone.jpg" alt="Francois Peron National Park">
@@ -412,7 +418,7 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-04" class="timeline-entry entry-right" onmouseover="hoverCategories([1])" onmouseout="unhoverCategories([1])">
+        <section id="event-04" class="timeline-entry entry-right hover-1">
             <figure class="feature-img">
                 <div>
                     <img src="images/steep_point.jpeg" alt="Steep point">
@@ -438,7 +444,7 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
         
-        <section id="event-05" class="timeline-entry entry-left" onmouseover="hoverCategories([2])" onmouseout="unhoverCategories([2])">
+        <section id="event-05" class="timeline-entry entry-left hover-2">
             <figure>
                 <img src="images/aboriginal_cave.jpg" alt="Cave shelter at Monkey Mia">
                 <figcaption>Cave shelter at Monkey Mia</figcaption>
@@ -461,7 +467,7 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-06" class="timeline-entry entry-right" onmouseover="hoverCategories([1])" onmouseout="unhoverCategories([1])">
+        <section id="event-06" class="timeline-entry entry-right hover-1">
             <figure>
                 <img src="images/birrida_big_lagoon.jpg" alt="A flooded birrida - big lagoon">
                 <figcaption>A flooded birrida - big lagoon</figcaption>
@@ -484,7 +490,7 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
         
-        <section id="event-07" class="timeline-entry entry-left" onmouseover="hoverCategories([1])" onmouseout="unhoverCategories([1])">
+        <section id="event-07" class="timeline-entry entry-left hover-1">
             <figure class="double-img">
                 <div>
                     <img src="images/blowholes.jpg" alt="Blowholes">
@@ -510,7 +516,7 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-08" class="timeline-entry entry-right" onmouseover="hoverCategories([1])" onmouseout="unhoverCategories([1])">
+        <section id="event-08" class="timeline-entry entry-right hover-1">
             <figure>
                 <img src="images/dorre_island.jpg" alt="Dorre Island">
                 <figcaption>Dorre Island</figcaption>
@@ -533,7 +539,7 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
         
-        <section id="event-09" class="timeline-entry entry-left" onmouseover="hoverCategories([3])" onmouseout="unhoverCategories([3])">
+        <section id="event-09" class="timeline-entry entry-left hover-3">
             <figure>
                 <img src="images/dirk_hartog_plate.jpg" alt="A plate enscribed with details of the visit which was left on the island">
                 <figcaption>A plate enscribed with details of the visit which was left on the island</figcaption>
@@ -556,7 +562,7 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-10" class="timeline-entry entry-right" onmouseover="hoverCategories([2, 3])" onmouseout="unhoverCategories([2, 3])">
+        <section id="event-10" class="timeline-entry entry-right hover-2 hover-3">
             <figure>
                 <img src="images/aboriginal_huts.jpg" alt="Aboriginal huts as depicted by a European in 1803">
                 <figcaption>Aboriginal huts as depicted by a European in 1803</figcaption>
@@ -582,7 +588,7 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-11" class="timeline-entry entry-left" onmouseover="hoverCategories([3])" onmouseout="unhoverCategories([3])">
+        <section id="event-11" class="timeline-entry entry-left hover-3">
             <figure>
                 <img src="images/boodies.png" alt="The boodie - one species that is currently conservation dependent">
                 <figcaption>The boodie - one species that is currently conservation dependent</figcaption>
@@ -605,7 +611,7 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-12" class="timeline-entry entry-right" onmouseover="hoverCategories([3])" onmouseout="unhoverCategories([3])">
+        <section id="event-12" class="timeline-entry entry-right hover-3">
             <figure>
                 <img src="images/guano_mining.jpg" alt="Guano mining">
                 <figcaption>Guano mining</figcaption>
@@ -628,7 +634,7 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-13" class="timeline-entry entry-left" onmouseover="hoverCategories([3])" onmouseout="unhoverCategories([3])">
+        <section id="event-13" class="timeline-entry entry-left hover-3">
             <figure>
                 <img src="images/pearling.jpg" alt="Boiling out pearls">
                 <figcaption>Boiling out pearls</figcaption>
@@ -651,7 +657,7 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-14" class="timeline-entry entry-right" onmouseover="hoverCategories([3, 5])" onmouseout="unhoverCategories([3, 5])">
+        <section id="event-14" class="timeline-entry entry-right hover-3 hover-5">
             <figure>
                 <img src="images/shearing_shed.jpg" alt="Hamelin Station shearing shed">
                 <figcaption>Hamelin Station shearing shed</figcaption>
@@ -677,7 +683,7 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-15" class="timeline-entry entry-left" onmouseover="hoverCategories([3])" onmouseout="unhoverCategories([3])">
+        <section id="event-15" class="timeline-entry entry-left hover-3">
             <figure class="double-img">
                 <div>
                     <img src="images/sandalwood.jpg" alt="Sandalwood trees packaged for shipping">
@@ -703,7 +709,7 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-16" class="timeline-entry entry-right" onmouseover="hoverCategories([3])" onmouseout="unhoverCategories([3])">
+        <section id="event-16" class="timeline-entry entry-right hover-3">
             <figure>
                 <img src="images/fishing.jpg" alt="Net fishing">
                 <figcaption>Net fishing</figcaption>
@@ -726,7 +732,7 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-17" class="timeline-entry entry-left" onmouseover="hoverCategories([3, 5])" onmouseout="unhoverCategories([3, 5])">
+        <section id="event-17" class="timeline-entry entry-left hover-3 hover-5">
             <figure>
                 <img src="images/sheep_drinking.jpg" alt="Sheep drinking from a trough">
                 <figcaption>Sheep drinking from a trough</figcaption>
@@ -752,7 +758,7 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-18" class="timeline-entry entry-right" onmouseover="hoverCategories([4])" onmouseout="unhoverCategories([4])">
+        <section id="event-18" class="timeline-entry entry-right hover-4">
             <figure>
                 <img src="images/peron_national_park.jpg" alt="Francois Peron National Park">
                 <figcaption>Francois Peron National Park</figcaption>
@@ -775,7 +781,7 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-19" class="timeline-entry entry-left" onmouseover="hoverCategories([4])" onmouseout="unhoverCategories([4])">
+        <section id="event-19" class="timeline-entry entry-left hover-4">
             <figure>
                 <img src="images/shark_bay_satellite.png" alt="Shark Bay satellite view">
                 <figcaption>Shark Bay satellite view</figcaption>
@@ -798,7 +804,7 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-20" class="timeline-entry entry-right" onmouseover="hoverCategories([5, 6, 7])" onmouseout="unhoverCategories([5, 6, 7])">
+        <section id="event-20" class="timeline-entry entry-right hover-5 hover-6 hover-7">
             <figure>
                 <img src="images/goat_pen.jpg" alt="Goats in enclosure">
                 <figcaption>Goats in enclosure</figcaption>
@@ -827,7 +833,7 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-21" class="timeline-entry entry-left" onmouseover="hoverCategories([6, 7])" onmouseout="unhoverCategories([6, 7])">
+        <section id="event-21" class="timeline-entry entry-left hover-6 hover-7">
             <figure>
                 <img src="images/tagging_bilby.jpg" alt="Bilby being tagged at the Peron Captive Breeding Centre">
                 <figcaption>Bilby being tagged at the Peron Captive Breeding Centre</figcaption>
@@ -853,7 +859,7 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-22" class="timeline-entry entry-right" onmouseover="hoverCategories([6, 7])" onmouseout="unhoverCategories([6, 7])">
+        <section id="event-22" class="timeline-entry entry-right hover-6 hover-7">
             <figure class="double-img">
                 <div>
                     <img src="images/woylie.jpg" alt="Woylie">
@@ -882,7 +888,7 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-23" class="timeline-entry entry-left" onmouseover="hoverCategories([4])" onmouseout="unhoverCategories([4])">
+        <section id="event-23" class="timeline-entry entry-left hover-4">
             <figure>
                 <img src="images/faure_island.jpg" alt="Faure Island">
                 <figcaption>Faure Island</figcaption>
@@ -905,7 +911,7 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-24" class="timeline-entry entry-right" onmouseover="hoverCategories([4])" onmouseout="unhoverCategories([4])">
+        <section id="event-24" class="timeline-entry entry-right hover-4">
             <figure>
                 <img src="images/nanga_bay.jpg" alt="Nanga bay">
                 <figcaption>Nanga bay</figcaption>
@@ -928,7 +934,7 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-25" class="timeline-entry entry-left" onmouseover="hoverCategories([6, 7])" onmouseout="unhoverCategories([6, 7])">
+        <section id="event-25" class="timeline-entry entry-left hover-6 hover-7">
             <figure>
                 <img src="images/rufous-hare-wallaby.jpg" alt="Rufous hare-wallaby">
                 <figcaption>Rufous hare-wallaby</figcaption>
@@ -954,7 +960,7 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-26" class="timeline-entry entry-right" onmouseover="hoverCategories([6, 7])" onmouseout="unhoverCategories([6, 7])">
+        <section id="event-26" class="timeline-entry entry-right hover-6 hover-7">
             <figure>
                 <img src="images/banded-hare-wallaby.jpg" alt="Banded hare-wallaby">
                 <figcaption>Banded hare-wallaby</figcaption>
@@ -980,7 +986,7 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-27" class="timeline-entry entry-left" onmouseover="hoverCategories([6, 7])" onmouseout="unhoverCategories([6, 7])">
+        <section id="event-27" class="timeline-entry entry-left hover-6 hover-7">
             <figure>
                 <img src="images/quenda.jpg" alt="Quenda (southern brown bandicoot)">
                 <figcaption>Quenda (southern brown bandicoot)</figcaption>
@@ -1006,7 +1012,7 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-28" class="timeline-entry entry-right" onmouseover="hoverCategories([4])" onmouseout="unhoverCategories([4])">
+        <section id="event-28" class="timeline-entry entry-right hover-4">
             <figure>
                 <img src="images/cape_inscription.jpg" alt="Cape Inscription at Dirk Hartog Island">
                 <figcaption>Cape Inscription at Dirk Hartog Island</figcaption>
@@ -1029,7 +1035,7 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-29" class="timeline-entry entry-left" onmouseover="hoverCategories([5, 6, 8])" onmouseout="unhoverCategories([5, 6, 8])">
+        <section id="event-29" class="timeline-entry entry-left hover-5 hover-6 hover-8">
             <figure class="feature-img">
                 <div>
                     <img src="images/dirk_hartog_island_landscape.jpg" alt="Dirk Hartog Island landscape">
@@ -1061,7 +1067,7 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-30" class="timeline-entry entry-right" onmouseover="hoverCategories([6, 7])" onmouseout="unhoverCategories([6, 7])">
+        <section id="event-30" class="timeline-entry entry-right hover-6 hover-7">
             <figure>
                 <img src="images/bilby.png" alt="Bilby">
                 <figcaption>Bilby</figcaption>
@@ -1087,7 +1093,7 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-31" class="timeline-entry entry-left" onmouseover="hoverCategories([4])" onmouseout="unhoverCategories([4])">
+        <section id="event-31" class="timeline-entry entry-left hover-4">
             <figure>
                 <img src="images/hamelin_pool.jpg" alt="Hamelin Pool coastline">
                 <figcaption>Hamelin Pool coastline</figcaption>
@@ -1110,7 +1116,7 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-32" class="timeline-entry entry-right" onmouseover="hoverCategories([5, 8])" onmouseout="unhoverCategories([5, 8])">
+        <section id="event-32" class="timeline-entry entry-right hover-5 hover-8">
             <figure>
                 <img src="images/sheep.jpg" alt="Sheep at Hamelin station">
                 <figcaption>Sheep at Hamelin station</figcaption>
@@ -1136,7 +1142,7 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-33" class="timeline-entry entry-left" onmouseover="hoverCategories([5, 8])" onmouseout="unhoverCategories([5, 8])">
+        <section id="event-33" class="timeline-entry entry-left hover-5 hover-8">
             <figure>
                 <img src="images/goats.jpg" alt="Goats on Dirk Hartog Island">
                 <figcaption>Goats on Dirk Hartog Island</figcaption>
@@ -1162,7 +1168,7 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-34" class="timeline-entry entry-right" onmouseover="hoverCategories([5, 6, 8])" onmouseout="unhoverCategories([5, 6, 8])">
+        <section id="event-34" class="timeline-entry entry-right hover-5 hover-6 hover-8">
             <figure>
                 <img src="images/feral_cat.jpg" alt="Feral cat at camera trap">
                 <figcaption>Feral cat at camera trap</figcaption>
@@ -1191,7 +1197,7 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-35" class="timeline-entry entry-left" onmouseover="hoverCategories([6, 8])" onmouseout="unhoverCategories([6, 8])">
+        <section id="event-35" class="timeline-entry entry-left hover-6 hover-8">
             <figure class="double-img">
                 <div>
                     <img src="images/shark-bay-bandicoot.png" alt="Shark Bay bandicoot">
@@ -1220,7 +1226,7 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-36" class="timeline-entry entry-right" onmouseover="hoverCategories([6, 8])" onmouseout="unhoverCategories([6, 8])">
+        <section id="event-36" class="timeline-entry entry-right hover-6 hover-8">
             <figure class="double-img">
                 <div>
                     <img src="images/greater_stick_nest_rats.png" alt="Greater stick-nest rats">
@@ -1249,7 +1255,7 @@
             <div class="curve-bottom curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-37" class="timeline-entry entry-left" onmouseover="hoverCategories([6, 8])" onmouseout="unhoverCategories([6, 8])">
+        <section id="event-37" class="timeline-entry entry-left hover-6 hover-8">
             <figure>
                 <img src="images/western_grasswren.png" alt="Western grasswren">
                 <figcaption>Western grasswren</figcaption>
@@ -1275,7 +1281,7 @@
             <div class="curve-top curve-right" aria-hidden="true"></div>
         </section>
 
-        <section id="event-38" class="timeline-entry entry-right" onmouseover="hoverCategories([6, 8])" onmouseout="unhoverCategories([6, 8])">
+        <section id="event-38" class="timeline-entry entry-right hover-6 hover-8">
             <figure>
                 <img src="images/brush_tailed_mulgara.jpg" alt="Brush-tailed mulgara">
                 <figcaption>Brush-tailed mulgara</figcaption>

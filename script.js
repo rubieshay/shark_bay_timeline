@@ -13,32 +13,19 @@ function expandMenu(element) {
     menu.classList.toggle("menu-hidden");
 }
 
-// function hoverCategory(cat_ids) {
-//     cat_ids.forEach(id => {
-//         const cat_key = document.getElementById("cat-" + id);
-//         cat_key.classList.add("cat-highlight-single");
-//     });
-// }
-
-// function unhoverCategory(cat_ids) {
-//     cat_ids.forEach(id => {
-//         const cat_key = document.getElementById("cat-" + id);
-//         cat_key.classList.remove("cat-highlight-single");
-//     });
-// }
-
-function hoverCategories(cat_ids) {
-    cat_ids.forEach(id => {
-        const cat_key = document.getElementById("cat-" + id);
-        cat_key.classList.add("cat-highlight");
-    });
+function expandOverview(element) {
+    const overview = document.getElementById("overview");
+    overview.classList.toggle("overview-hidden");
 }
 
-function unhoverCategories(cat_ids) {
-    cat_ids.forEach(id => {
-        const cat_key = document.getElementById("cat-" + id);
-        cat_key.classList.remove("cat-highlight");
-    });
+function hoverCategory(cat_id) {
+    const cat_key = document.getElementById("cat-" + cat_id);
+    cat_key.classList.add("cat-highlight");
+}
+
+function unhoverCategory(cat_id) {
+    const cat_key = document.getElementById("cat-" + cat_id);
+    cat_key.classList.remove("cat-highlight");
 }
 
 function determinePosition() {
@@ -75,15 +62,29 @@ function determinePosition() {
     }
     for (let i = 1; i <= 38; i++) {
         const num_str = i.toString().padStart(2, "0");
-        const curr_event = document.getElementById("event-button-" + num_str);
-        if (curr_event == null) {
-            continue;
+        const event_button = document.getElementById("event-button-" + num_str);
+        if (event_button != null) {
+            const event = document.getElementById("event-" + num_str);
+            event.classList.forEach(clss => {
+                if (clss.includes("hover")) {
+                    let cat_id = clss[6];
+                    unhoverCategory(cat_id);
+                }
+            });
+            event_button.classList.remove("current-event-button");
         }
-        if (i == max_id) {
-            curr_event.classList.add("current-event-button");
-        } else {
-            curr_event.classList.remove("current-event-button");
-        }
+    }
+    if (max_id != null) {
+        const num_str = max_id.toString().padStart(2, "0");
+        const event = document.getElementById("event-" + num_str);
+        event.classList.forEach(clss => {
+            if (clss.includes("hover")) {
+                let cat_id = clss[6];
+                hoverCategory(cat_id);
+            }
+        });
+        curr_button = document.getElementById("event-button-" + num_str);
+        curr_button.classList.add("current-event-button");
     }
 }
 
