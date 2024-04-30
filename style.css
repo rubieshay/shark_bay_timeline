@@ -231,7 +231,8 @@ img.category-icon:hover {
 }
 @media (max-width: 580px) {
     h1 a {
-        text-align: center;
+        font-size: clamp(0.9rem, 4vw, 1.5rem);
+        height: clamp(0.9rem, 4vw, 1.5rem);
     }
     #title-bar button {
         height: 1.5rem;
@@ -264,7 +265,7 @@ img.category-icon:hover {
 .menu-title h2 {
     font-family: "Urbana", sans-serif;
     text-transform: uppercase;
-    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+    font-size: 1.5rem;
     color: var(--white);
     text-align: center;
     margin-right: 2rem;
@@ -281,7 +282,7 @@ div.menu-title {
 }
 .menu-title button img {
     display: block;
-    height: clamp(1rem, 2vw, 1.2rem);
+    height: 1.25rem;
     aspect-ratio: 4 / 3;
 }
 @media (max-width: 1250px) {
@@ -319,6 +320,12 @@ div.menu-title {
     }
     .menu-hidden button, .overview-hidden button {
         rotate: 180deg;
+    }
+}
+@media (max-width: 580px) {
+    .menu-title h2 {
+        font-size: clamp(0.75rem, 3.5vw, 1.25rem);
+        height: clamp(0.75rem, 3.5vw, 1.25rem);
     }
 }
 
@@ -696,6 +703,7 @@ main {
 .event hr {
     grid-area: rule;
     border: 1.5px solid var(--dark-orange);
+    height: 3px;
 }
 .event p {
     grid-area: evnt;

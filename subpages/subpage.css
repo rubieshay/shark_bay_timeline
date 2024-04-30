@@ -50,6 +50,17 @@ aside {
         width: 70vw;
         position: absolute;
         right: 0;
+        justify-content: space-between;
+        gap: 0.5rem;
+    }
+    #category-header h2 span {
+        font-size: clamp(0.6rem, 2.8vw, 1rem);
+        height: clamp(0.6rem, 2.8vw, 1rem);
+        line-height: clamp(0.6rem, 2.8vw, 1rem);
+    }
+    #category-header a {
+        position: relative;
+        left: auto;
     }
     body:not(:has(#key.menu-hidden)) aside {
         height: calc(100dvh - 3.5rem);
