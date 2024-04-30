@@ -585,13 +585,13 @@ aside li:nth-of-type(2n) span {
         z-index: 10;
     }
     aside#overview:has(.menu-title).overview-hidden {
-        height: 0;
+        height: 3.25rem;
     }
     aside::after {
         left: calc(15vw - 0.1875rem);
     }
     aside.overview-hidden::after {
-        height: 0;
+        height: 3.25rem;
     }
 }
 
@@ -895,87 +895,58 @@ main {
 
 /* FIGURE ANIMATIONS */
 
-@media (prefers-reduced-motion: no-preference) {
-    .timeline-entry figure {
-        animation: paralax-main linear both;
-        animation-timeline: view(9.75rem 0);
-    }
-    .entry-right figure.double-img img:first-child, .entry-left figure.double-img img:last-child {
-        animation: paralax-double-out linear both;
-        animation-timeline: view(calc(9.75rem + 20dvh) 40dvh);
-    }
-    .entry-right figure.double-img img:last-child, .entry-left figure.double-img img:first-child {
-        animation: paralax-double-in linear both;
-        animation-timeline: view(calc(9.75rem + 20dvh) 40dvh);
-    }
-    .timeline-entry figure.feature-img img:first-child {
-        height: 84%;
-    }
-    .timeline-entry figure.feature-img img:last-child {
-        animation: paralax-feature linear both;
-        animation-timeline: view(calc(9.75rem + 10dvh) 20dvh);
-    }
-    @keyframes paralax-main {
-        0% {
-            transform: translateY(25vh);
-        }
-        100% {
-            transform: translateY(-25vh);
-        }
-    }
-    @keyframes paralax-double-out {
-        0% {
-            transform: translateY(calc(200%/3));
-        }
-        100% {
-            transform: translateY(0);
-        }
-    }
-    @keyframes paralax-double-in {
-        0% {
-            transform: translateY(0);
-        }
-        100% {
-            transform: translateY(calc(200%/3));
-        }
-    }
-    @keyframes paralax-feature {
-        0% {
-            transform: translateY(60%);
-        }
-        100% {
-            transform: translateY(0);
-        }
-    }
-    @media (max-width: 1250px) {
+@supports (animation-timeline: view()) {
+    @media (prefers-reduced-motion: no-preference) {
         .timeline-entry figure {
-            animation: paralax-main linear both;
-            animation-timeline: view(11.25rem 0);
+            animation: paralax-main linear;
+            animation-timeline: view(9.75rem 0);
         }
         .entry-right figure.double-img img:first-child, .entry-left figure.double-img img:last-child {
-            animation: paralax-double-out linear both;
-            animation-timeline: view(calc(11.25rem + 20dvh) 40dvh);
+            animation: paralax-double-out linear;
+            animation-timeline: view(calc(9.75rem + 20dvh) 40dvh);
         }
         .entry-right figure.double-img img:last-child, .entry-left figure.double-img img:first-child {
-            animation: paralax-double-in linear both;
-            animation-timeline: view(calc(11.25rem + 20dvh) 40dvh);
-        }
-        .timeline-entry figure.feature-img img:last-child {
-            animation: paralax-feature linear both;
-            animation-timeline: view(calc(11.25rem + 10dvh) 20dvh);
-        }
-    }
-    @media (min-width: 975px) {
-        .entry-right figure.double-img img:first-child, .entry-left figure.double-img img:last-child {
-            bottom: auto;
-        }
-    }
-    @media (max-width: 975px) {
-        .timeline-entry figure, .entry-right figure.double-img img:first-child, .entry-left figure.double-img img:last-child, .entry-right figure.double-img img:last-child, .entry-left figure.double-img img:first-child, .timeline-entry figure.feature-img img:last-child {
-            animation: none;
+            animation: paralax-double-in linear;
+            animation-timeline: view(calc(9.75rem + 20dvh) 40dvh);
         }
         .timeline-entry figure.feature-img img:first-child {
-            height: 92%;
+            height: 84%;
+        }
+        .timeline-entry figure.feature-img img:last-child {
+            animation: paralax-feature linear;
+            animation-timeline: view(calc(9.75rem + 10dvh) 20dvh);
+        }
+        @keyframes paralax-main {
+            0% {
+                transform: translateY(25vh);
+            }
+            100% {
+                transform: translateY(-25vh);
+            }
+        }
+        @keyframes paralax-double-out {
+            0% {
+                transform: translateY(calc(200%/3));
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        @keyframes paralax-double-in {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(calc(200%/3));
+            }
+        }
+        @keyframes paralax-feature {
+            0% {
+                transform: translateY(60%);
+            }
+            100% {
+                transform: translateY(0);
+            }
         }
     }
 }
