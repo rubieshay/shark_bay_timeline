@@ -902,18 +902,18 @@ main {
             animation-timeline: view(9.75rem 0);
         }
         .entry-right figure.double-img img:first-child, .entry-left figure.double-img img:last-child {
-            animation: paralax-double-out linear;
+            animation: paralax-double-out linear both;
             animation-timeline: view(calc(9.75rem + 20dvh) 40dvh);
         }
         .entry-right figure.double-img img:last-child, .entry-left figure.double-img img:first-child {
-            animation: paralax-double-in linear;
+            animation: paralax-double-in linear both;
             animation-timeline: view(calc(9.75rem + 20dvh) 40dvh);
         }
         .timeline-entry figure.feature-img img:first-child {
             height: 84%;
         }
         .timeline-entry figure.feature-img img:last-child {
-            animation: paralax-feature linear;
+            animation: paralax-feature linear both;
             animation-timeline: view(calc(9.75rem + 10dvh) 20dvh);
         }
         @keyframes paralax-main {
@@ -926,10 +926,10 @@ main {
         }
         @keyframes paralax-double-out {
             0% {
-                transform: translateY(calc(200%/3));
+                transform: translateY(0);
             }
             100% {
-                transform: translateY(0);
+                transform: translateY(calc(-200%/3));
             }
         }
         @keyframes paralax-double-in {
