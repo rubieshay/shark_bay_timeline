@@ -572,6 +572,7 @@ aside li:nth-of-type(2n) span {
         width: 30vw;
         height: calc(100dvh - 3.5rem);
         justify-content: flex-start;
+        z-index: 10;
     }
     aside ol {
         margin-block: 0;
@@ -586,6 +587,7 @@ aside li:nth-of-type(2n) span {
     }
     aside#overview:has(.menu-title).overview-hidden {
         height: 3.25rem;
+        overflow-y: hidden;
     }
     aside::after {
         left: calc(15vw - 0.1875rem);
@@ -897,55 +899,57 @@ main {
 
 @supports (animation-timeline: view()) {
     @media (prefers-reduced-motion: no-preference) {
-        .timeline-entry figure {
-            animation: paralax-main linear;
-            animation-timeline: view(9.75rem 0);
-        }
-        .entry-right figure.double-img img:first-child, .entry-left figure.double-img img:last-child {
-            animation: paralax-double-out linear both;
-            animation-timeline: view(calc(9.75rem + 20dvh) 40dvh);
-        }
-        .entry-right figure.double-img img:last-child, .entry-left figure.double-img img:first-child {
-            animation: paralax-double-in linear both;
-            animation-timeline: view(calc(9.75rem + 20dvh) 40dvh);
-        }
-        .timeline-entry figure.feature-img img:first-child {
-            height: 84%;
-        }
-        .timeline-entry figure.feature-img img:last-child {
-            animation: paralax-feature linear both;
-            animation-timeline: view(calc(9.75rem + 10dvh) 20dvh);
-        }
-        @keyframes paralax-main {
-            0% {
-                transform: translateY(25vh);
+        @media (min-width: 976px) {
+            .timeline-entry figure {
+                animation: paralax-main linear;
+                animation-timeline: view(9.75rem 0);
             }
-            100% {
-                transform: translateY(-25vh);
+            .entry-right figure.double-img img:first-child, .entry-left figure.double-img img:last-child {
+                animation: paralax-double-out linear both;
+                animation-timeline: view(calc(9.75rem + 20dvh) 40dvh);
             }
-        }
-        @keyframes paralax-double-out {
-            0% {
-                transform: translateY(0);
+            .entry-right figure.double-img img:last-child, .entry-left figure.double-img img:first-child {
+                animation: paralax-double-in linear both;
+                animation-timeline: view(calc(9.75rem + 20dvh) 40dvh);
             }
-            100% {
-                transform: translateY(calc(-200%/3));
+            .timeline-entry figure.feature-img img:first-child {
+                height: 84%;
             }
-        }
-        @keyframes paralax-double-in {
-            0% {
-                transform: translateY(0);
+            .timeline-entry figure.feature-img img:last-child {
+                animation: paralax-feature linear both;
+                animation-timeline: view(calc(9.75rem + 10dvh) 20dvh);
             }
-            100% {
-                transform: translateY(calc(200%/3));
+            @keyframes paralax-main {
+                0% {
+                    transform: translateY(25vh);
+                }
+                100% {
+                    transform: translateY(-25vh);
+                }
             }
-        }
-        @keyframes paralax-feature {
-            0% {
-                transform: translateY(60%);
+            @keyframes paralax-double-out {
+                0% {
+                    transform: translateY(0);
+                }
+                100% {
+                    transform: translateY(calc(-200%/3));
+                }
             }
-            100% {
-                transform: translateY(0);
+            @keyframes paralax-double-in {
+                0% {
+                    transform: translateY(0);
+                }
+                100% {
+                    transform: translateY(calc(200%/3));
+                }
+            }
+            @keyframes paralax-feature {
+                0% {
+                    transform: translateY(60%);
+                }
+                100% {
+                    transform: translateY(0);
+                }
             }
         }
     }
